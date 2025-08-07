@@ -39,3 +39,6 @@ where = ["src"]
 
 [tool.setuptools.package-dir]
 "" = "src"
+
+[tool.setuptools.package-data]
+"AGS324" = ["ags4_standard_headers.json"]

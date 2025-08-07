@@ -30,10 +30,14 @@ def ags4_c3dgm(input_ags_path: str, output_ags_path: str=None) -> None:
     
         import json
         import re
+        import os
         from io import StringIO
         import pandas as pd
 
-        with open("ags4_standard_headers.json") as f:
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        ags4_standard_headers = os.path.join(current_dir, "ags4_standard_headers.json")
+
+        with open(ags4_standard_headers) as f:
             standards = json.load(f)
         with open(input_ags_path, 'r') as f:
             contents = re.sub(r'[","]*("\n"<CONT>)[","]*', "<C>", f.read()) # Match <CONT> and replace with <C>
@@ -121,7 +125,6 @@ def ags4_c3dgm(input_ags_path: str, output_ags_path: str=None) -> None:
         for cont_index, cont_instance in zip(cont_indices, cont_instances):
             for key, value in range_dict.items():
                 if cont_index in value:
-                    print(f"{header_counts[key]=}, {cont_instance}")
                     if header_counts[key] != len(cont_instance.split('","')):
                         ags4_text = _replace_char(ags4_text, cont_index, '","', length=3)
                     break
@@ -163,4 +166,4 @@ def ags4_c3dgm(input_ags_path: str, output_ags_path: str=None) -> None:
             f.write(output_text)
 
     except Exception as e:
-        logger.error(format_exc(e))
+        logger.error(format_exc())
