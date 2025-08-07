@@ -1,34 +1,211 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+﻿.github/
+.git/
+.vs/
 
-/.vs/AGS324/CopilotIndices/17.14.794.21998/CodeChunks.db
-/.vs/AGS324/CopilotIndices/17.14.794.21998/CodeChunks.db-shm
-/.vs/AGS324/CopilotIndices/17.14.794.21998/CodeChunks.db-wal
-/.vs/AGS324/CopilotIndices/17.14.794.21998/SemanticSymbols.db
-/.vs/AGS324/CopilotIndices/17.14.794.21998/SemanticSymbols.db-shm
-/.vs/AGS324/CopilotIndices/17.14.794.21998/SemanticSymbols.db-wal
-/.vs/AGS324/FileContentIndex/187b9db0-4382-49f5-b889-cb02dbc3aa06.vsidx
-/.vs/AGS324/FileContentIndex/22b81c95-19cf-457c-81af-a7394b2acd59.vsidx
-/.vs/AGS324/FileContentIndex/814a64a0-5485-4e05-912f-7f90b83c4351.vsidx
-/.vs/AGS324/FileContentIndex/9d97d54d-742b-4ed3-8163-90bdac47b2d0.vsidx
-/.vs/AGS324/FileContentIndex/f1755a41-ee13-4ea2-9fa2-5fbbb4a89382.vsidx
-/.vs/AGS324/v17/.wsuo
-/.vs/AGS324/v17/DocumentLayout.backup.json
-/.vs/AGS324/v17/DocumentLayout.json
-/.vs/slnx.sqlite
-/.vs/VSWorkspaceState.json
-/dist/ags324-0.1.0-py3-none-any.whl
-/dist/ags324-0.1.0.tar.gz
-/src/AGS324.egg-info/dependency_links.txt
-/src/AGS324.egg-info/PKG-INFO
-/src/AGS324.egg-info/requires.txt
-/src/AGS324.egg-info/SOURCES.txt
-/src/AGS324.egg-info/top_level.txt
-/.vs/AGS324/FileContentIndex/6011bf1d-60fd-4999-89de-9e24197bf574.vsidx
-/.vs/AGS324/FileContentIndex/747ffe8e-5b99-4cac-9fa4-d623007eaeaa.vsidx
-/.vs/AGS324/FileContentIndex/010be857-f4c5-45ae-a4c2-9bfc9eff0298.vsidx
-/.vs/AGS324/FileContentIndex/f67e8d73-40fa-4ef4-a6fa-028eefe823e6.vsidx
-/.vs/AGS324/FileContentIndex/5965763a-2aa5-4e4d-8611-769f585dd831.vsidx
-/.vs/AGS324/FileContentIndex/597d3276-ec89-4107-980a-23867ec1a22d.vsidx
-/.vs/AGS324/FileContentIndex/60fa54e6-7e45-4a50-815e-c534e2f0a05d.vsidx
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[codz]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+#   For a library or package, you might want to ignore these files since the code is
+#   intended to run in multiple environments; otherwise, check them in:
+# .python-version
+
+# pipenv
+#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
+#   However, in case of collaboration, if having platform-specific dependencies or dependencies
+#   having no cross-platform support, pipenv may install dependencies that don't work, or not
+#   install all needed dependencies.
+#Pipfile.lock
+
+# UV
+#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#uv.lock
+
+# poetry
+#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
+#   This is especially recommended for binary packages to ensure reproducibility, and is more
+#   commonly ignored for libraries.
+#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
+#poetry.lock
+#poetry.toml
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#   pdm recommends including project-wide configuration in pdm.toml, but excluding .pdm-python.
+#   https://pdm-project.org/en/latest/usage/project/#working-with-version-control
+#pdm.lock
+#pdm.toml
+.pdm-python
+.pdm-build/
+
+# pixi
+#   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
+#pixi.lock
+#   Pixi creates a virtual environment in the .pixi directory, just like venv module creates one
+#   in the .venv directory. It is recommended not to include this directory in version control.
+.pixi
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.envrc
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# PyCharm
+#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
+#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
+#  and can be added to the global gitignore or merged into this file.  For a more nuclear
+#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
+#.idea/
+
+# Abstra
+# Abstra is an AI-powered process automation framework.
+# Ignore directories containing user credentials, local state, and settings.
+# Learn more at https://abstra.io/docs
+.abstra/
+
+# Visual Studio Code
+#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
+#  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
+#  and can be added to the global gitignore or merged into this file. However, if you prefer, 
+#  you could uncomment the following to ignore the entire vscode folder
+# .vscode/
+
+# Ruff stuff:
+.ruff_cache/
+
+# PyPI configuration file
+.pypirc
+
+# Cursor
+#  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
+#  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
+#  refer to https://docs.cursor.com/context/ignore-files
+.cursorignore
+.cursorindexingignore
+
+# Marimo
+marimo/_static/
+marimo/_lsp/
+__marimo__/

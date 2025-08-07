@@ -1,9 +1,9 @@
 ﻿# AGS324 - A utility library for upgrading AGS 3.1 data to AGS 4.
 
 This package provides tools for:
-- Upgrading AGS 3.1 files to AGS 4 format, with minimally required data for usage of **Autodesk Civil 3D®** **Geotechnical Modeler®**.
+- Upgrading AGS 3.1 files to AGS 4 format, with minimally required data for usage of **Autodesk Civil 3D(R)** **Geotechnical Modeler(R)**.
 
-*Note: Autodesk Civil 3D®, Geotechnical Modeler® are trademarks of Autodesk, Inc. This package is not affiliated with or endorsed by Autodesk.*
+*Note: Autodesk Civil 3D(R), Geotechnical Modeler(R) are trademarks of Autodesk, Inc. This package is not affiliated with or endorsed by Autodesk.*
 
 ## Basic usage:
 ### Import
