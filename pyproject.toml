@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "AGS324"
+version = "0.1.0"
+authors = [
+    {name = "Yixuan Zhong", email = "yixuan.zhong.public@gmail.com"},
+]
+description = "A utility library for upgrading AGS 3.1 data to AGS 4"
+readme = "README.md"
+license = {text = "LGPL-3.0"}
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Lesser General Public License v3.0",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = [
+    "pandas>=1.5.3",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yixuanzhong/AGS324"
+"Bug Reports" = "https://github.com/yixuanzhong/AGS324/issues"
+"Source" = "https://github.com/yixuanzhong/AGS324"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.package-data]
+"AGS324" = ["ags4_standard_headers.json"]
