@@ -22,7 +22,7 @@ jobs:
           python-version: "3.x"
 
       - name: Install build tool
-        run: pip install build
+        run: pip install build twine
 
       - name: Build dist
         run: python -m build
