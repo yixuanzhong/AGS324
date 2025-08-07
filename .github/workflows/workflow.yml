@@ -11,29 +11,26 @@ permissions:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
-      - name: Install build tool
-        run: pip install build twine
+      - name: Upgrade build tools
+        run: pip install --upgrade pip setuptools wheel build twine
 
-      - name: Build dist
+      - name: Clean previous builds
+        run: rm -rf build/ dist/ *.egg-info
+
+      - name: Build distribution
         run: python -m build
         working-directory: ${{ github.workspace }}
 
-      - name: Publish to TestPyPI
-        if: github.event.release.prerelease == true
-        uses: pypa/gh-action-pypi-publish@v1.8.11
-        with:
-          repository-url: https://test.pypi.org/legacy/
+      - name: Check distributions
+        run: twine check dist/*
 
-      - name: Publish to PyPI
-        if: github.event.release.prerelease == false
+      - name: Publish to PyPI via Trusted Publisher
         uses: pypa/gh-action-pypi-publish@v1.8.11
