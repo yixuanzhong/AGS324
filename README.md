@@ -9,5 +9,10 @@ This package provides tools for:
 ### Import
 `from AGS324 import *`
 ### Upgrade an AGS 3.1 file to AGS 4
-`ags4_c3dgm("input.ags")`
-This creates "input_AGS4.ags"
+`AGS324.ags4_c3dgm("input.ags")`
+
+or
+
+`AGS324.ags4_c3dgm("input.ags", "input_AGS4.ags")`
+
+Either will save the converted file as "input_AGS4.ags".
