@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "AGS324"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
     {name = "Yixuan Zhong", email = "yixuan.zhong.public@gmail.com"},
 ]
@@ -40,3 +40,4 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 "AGS324" = ["ags4_standard_headers.json"]
+
