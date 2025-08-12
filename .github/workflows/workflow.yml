@@ -25,6 +25,25 @@ jobs:
       - name: Clean previous builds
         run: rm -rf build/ dist/ *.egg-info
 
+      - name: Debug package configuration
+        run: |
+          echo "=== Working Directory ==="
+          pwd
+          echo "=== Repository Root Contents ==="
+          ls -la
+          echo "=== Looking for pyproject.toml ==="
+          find . -name "pyproject.toml" -type f
+          echo "=== Content of pyproject.toml ==="
+          if [ -f pyproject.toml ]; then
+            cat pyproject.toml
+          else
+            echo "pyproject.toml not found in root!"
+          fi
+          echo "=== Checking for other config files ==="
+          ls -la setup.py setup.cfg 2>/dev/null || echo "No setup.py or setup.cfg found"
+          echo "=== Python package structure ==="
+          find . -name "*.py" -type f | head -10
+    
       - name: Build distribution
         run: python -m build
         working-directory: ${{ github.workspace }}
