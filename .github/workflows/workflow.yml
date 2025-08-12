@@ -19,9 +19,14 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Upgrade build tools
-        run: pip install --upgrade pip setuptools wheel build twine
-
+      - name: Upgrade build tools  
+        run: |
+          pip install --upgrade pip
+          pip install "setuptools>=61.0" wheel "build>=0.8.0" "twine>=4.0.0"
+          echo "=== Versions after upgrade ==="
+          twine --version
+          pip show setuptools
+        
       - name: Clean previous builds
         run: rm -rf build/ dist/ *.egg-info
 
