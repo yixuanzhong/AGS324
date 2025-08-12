@@ -45,10 +45,29 @@ jobs:
                       print(content[:500])
           "
     
-      - name: Build distribution
+      - name: Build distribution  
         run: python -m build
-        working-directory: ${{ github.workspace }}
-
+      
+      - name: Debug built files
+        run: |
+          echo "=== Built files ==="
+          ls -la dist/
+          echo "=== Checking each file ==="
+          for file in dist/*; do
+            echo "File: $file"
+            if [[ $file == *.tar.gz ]]; then
+              echo "Checking tarball contents..."
+              tar -tzf "$file" | grep PKG-INFO
+              echo "Extracting PKG-INFO..."
+              tar -xzOf "$file" "*/PKG-INFO" | head -10
+            elif [[ $file == *.whl ]]; then
+              echo "Checking wheel contents..."
+              unzip -l "$file" | grep METADATA
+              unzip -p "$file" "*/METADATA" | head -10
+            fi
+            echo "---"
+          done
+      
       - name: Check distributions
         run: twine check dist/*
 
