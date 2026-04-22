@@ -11,3 +11,7 @@ This package provides tools for:
 ### Upgrade an AGS 3.1 file to AGS 4
 `ags4_c3dgm("input.ags")`
 This creates "input_AGS4.ags"
+
+### Upgrade an AGS 3.1 file to a specific AGS 4 version
+`upgrade("input.ags", version="4.1.1")`
+If `version` is omitted, `upgrade()` targets the latest bundled AGS 4 version: `4.2`.

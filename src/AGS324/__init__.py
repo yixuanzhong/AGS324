@@ -11,6 +11,7 @@ This package provides tools for:
 Basic usage:
     >>> from AGS324 import *
     >>> ags4_c3dgm("input.ags") # Creates "input_AGS4.ags"
+    >>> upgrade("input.ags", version="4.1.1") # Upgrades using AGS 4.1.1 references
 """
 
 # Version information
@@ -19,7 +20,8 @@ __author__ = "Yixuan Zhong"
 __email__ = "yixuan.zhong.public@gmail.com"
 
 # Import main functionality
+from .converter import downgrade, upgrade
 from .main import ags4_c3dgm
 
 # Define what gets imported with "from my_package import *"
-__all__ = ['ags4_c3dgm']
+__all__ = ['ags4_c3dgm', 'upgrade', 'downgrade']

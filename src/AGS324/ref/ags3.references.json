@@ -1,0 +1,6094 @@
+{
+  "groups": {
+    "PROJ": {
+      "code": "PROJ",
+      "description": "Project Information",
+      "optional": false
+    },
+    "ABBR": {
+      "code": "ABBR",
+      "description": "Abbreviation Definitions",
+      "optional": false
+    },
+    "?BKFL": {
+      "code": "?BKFL",
+      "description": "Backfill Details",
+      "optional": true
+    },
+    "?BTVT": {
+      "code": "?BTVT",
+      "description": "Borehole Televiewer Tests",
+      "optional": true
+    },
+    "CDIA": {
+      "code": "CDIA",
+      "description": "Casing Diameter by Depth",
+      "optional": false
+    },
+    "CLSS": {
+      "code": "CLSS",
+      "description": "Classification Tests",
+      "optional": false
+    },
+    "CNMT": {
+      "code": "CNMT",
+      "description": "Contaminant and Chemical Testing",
+      "optional": false
+    },
+    "CODE": {
+      "code": "CODE",
+      "description": "Chemical Testing Codes",
+      "optional": false
+    },
+    "CONG": {
+      "code": "CONG",
+      "description": "Consolidation Tests - General",
+      "optional": false
+    },
+    "CONS": {
+      "code": "CONS",
+      "description": "Consolidation Tests",
+      "optional": false
+    },
+    "CORE": {
+      "code": "CORE",
+      "description": "Rotary Core Information",
+      "optional": false
+    },
+    "DETL": {
+      "code": "DETL",
+      "description": "Stratum Detail Descriptions",
+      "optional": false
+    },
+    "DICT": {
+      "code": "DICT",
+      "description": "User Defined Groups and Headings",
+      "optional": false
+    },
+    "DISC": {
+      "code": "DISC",
+      "description": "Discontinuity Data",
+      "optional": false
+    },
+    "DREM": {
+      "code": "DREM",
+      "description": "Depth Related Remarks",
+      "optional": false
+    },
+    "FILE": {
+      "code": "FILE",
+      "description": "Associated Files",
+      "optional": false
+    },
+    "FLSH": {
+      "code": "FLSH",
+      "description": "Rotary Core Flush Details",
+      "optional": false
+    },
+    "FRAC": {
+      "code": "FRAC",
+      "description": "Fracture Spacing",
+      "optional": false
+    },
+    "GEOL": {
+      "code": "GEOL",
+      "description": "Stratum Descriptions",
+      "optional": false
+    },
+    "?GMJT": {
+      "code": "?GMJT",
+      "description": "Goodman Jack Tests",
+      "optional": true
+    },
+    "GRAD": {
+      "code": "GRAD",
+      "description": "Particle Size Distribution Analysis Data",
+      "optional": false
+    },
+    "HDIA": {
+      "code": "HDIA",
+      "description": "Hole Diameter by Depth",
+      "optional": false
+    },
+    "?HDPH": {
+      "code": "?HDPH",
+      "description": "Depth Related Hole Information",
+      "optional": true
+    },
+    "HOLE": {
+      "code": "HOLE",
+      "description": "Hole Or Location Equivalent",
+      "optional": false
+    },
+    "?HORN": {
+      "code": "?HORN",
+      "description": "Borehole Orientation and Inclination",
+      "optional": true
+    },
+    "IPRM": {
+      "code": "IPRM",
+      "description": "In-Situ Permeability Tests",
+      "optional": false
+    },
+    "IRES": {
+      "code": "IRES",
+      "description": "In-Situ Resistivity Tests",
+      "optional": false
+    },
+    "ISPT": {
+      "code": "ISPT",
+      "description": "Standard Penetration Test Results",
+      "optional": false
+    },
+    "?ISTR": {
+      "code": "?ISTR",
+      "description": "In-Situ Stress Tests",
+      "optional": true
+    },
+    "IVAN": {
+      "code": "IVAN",
+      "description": "In-Situ Vane Tests",
+      "optional": false
+    },
+    "?LEMC": {
+      "code": "?LEMC",
+      "description": "Emerson Class Tests",
+      "optional": true
+    },
+    "?MONP": {
+      "code": "?MONP",
+      "description": "Monitor Points",
+      "optional": true
+    },
+    "?MONR": {
+      "code": "?MONR",
+      "description": "Monitor Point Readings",
+      "optional": true
+    },
+    "POBS": {
+      "code": "POBS",
+      "description": "Piezometer Readings",
+      "optional": false
+    },
+    "PREF": {
+      "code": "PREF",
+      "description": "Piezometer Installation Details",
+      "optional": false
+    },
+    "PRTD": {
+      "code": "PRTD",
+      "description": "Pressuremeter Test Data",
+      "optional": false
+    },
+    "PRTG": {
+      "code": "PRTG",
+      "description": "Pressuremeter Test Results, General",
+      "optional": false
+    },
+    "PRTL": {
+      "code": "PRTL",
+      "description": "Pressuremeter Test Results, Individual Loops",
+      "optional": false
+    },
+    "PTIM": {
+      "code": "PTIM",
+      "description": "Hole Progress by Time",
+      "optional": false
+    },
+    "PTST": {
+      "code": "PTST",
+      "description": "Laboratory Permeability Tests",
+      "optional": false
+    },
+    "PUMP": {
+      "code": "PUMP",
+      "description": "Pumping Tests",
+      "optional": false
+    },
+    "ROCK": {
+      "code": "ROCK",
+      "description": "Rock Testing",
+      "optional": false
+    },
+    "SAMP": {
+      "code": "SAMP",
+      "description": "Sample Reference Information",
+      "optional": false
+    },
+    "SHBG": {
+      "code": "SHBG",
+      "description": "Shear Box Testing - General",
+      "optional": false
+    },
+    "SHBT": {
+      "code": "SHBT",
+      "description": "Shear Box Testing",
+      "optional": false
+    },
+    "STCN": {
+      "code": "STCN",
+      "description": "Static Cone Penetration Tests",
+      "optional": false
+    },
+    "?TREM": {
+      "code": "?TREM",
+      "description": "Time Related Remarks",
+      "optional": true
+    },
+    "TRIG": {
+      "code": "TRIG",
+      "description": "Triaxial Tests - General",
+      "optional": false
+    },
+    "TRIX": {
+      "code": "TRIX",
+      "description": "Triaxial Tests",
+      "optional": false
+    },
+    "UNIT": {
+      "code": "UNIT",
+      "description": "Definition of <UNITS> and CNMT_UNIT",
+      "optional": false
+    },
+    "WETH": {
+      "code": "WETH",
+      "description": "Weathering Grades",
+      "optional": false
+    },
+    "WSTK": {
+      "code": "WSTK",
+      "description": "Water Strike Details",
+      "optional": false
+    }
+  },
+  "headingsByGroup": {
+    "PROJ": {
+      "PROJ_ID": {
+        "code": "PROJ_ID",
+        "description": "Project identifier",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PROJ_NAME": {
+        "code": "PROJ_NAME",
+        "description": "Project title",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PROJ_LOC": {
+        "code": "PROJ_LOC",
+        "description": "Location of site",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PROJ_CLNT": {
+        "code": "PROJ_CLNT",
+        "description": "Client name",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PROJ_CONT": {
+        "code": "PROJ_CONT",
+        "description": "Contractors name",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PROJ_ENG": {
+        "code": "PROJ_ENG",
+        "description": "Project engineer",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PROJ_MEMO": {
+        "code": "PROJ_MEMO",
+        "description": "General project comments",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PROJ_DATE": {
+        "code": "PROJ_DATE",
+        "description": "Date of production of data",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": false
+      },
+      "?PROJ_CID": {
+        "code": "?PROJ_CID",
+        "description": "Monitoring contractor identifier",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?PROJ_PROD": {
+        "code": "?PROJ_PROD",
+        "description": "Data file producer",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?PROJ_RECV": {
+        "code": "?PROJ_RECV",
+        "description": "Data file recipient",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?PROJ_ISNO": {
+        "code": "?PROJ_ISNO",
+        "description": "Issue sequence number",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?PROJ_STAT": {
+        "code": "?PROJ_STAT",
+        "description": "Status of data within submission",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "PROJ_AGS": {
+        "code": "PROJ_AGS",
+        "description": "AGS edition number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "ABBR": {
+      "ABBR_HDNG": {
+        "code": "ABBR_HDNG",
+        "description": "Field heading in group",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ABBR_CODE": {
+        "code": "ABBR_CODE",
+        "description": "Abbreviation used",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ABBR_DESC": {
+        "code": "ABBR_DESC",
+        "description": "Description of abbreviation",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "?BKFL": {
+      "?HOLE_ID": {
+        "code": "?HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?BKFL_TOP": {
+        "code": "?BKFL_TOP",
+        "description": "Depth to top of section",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?BKFL_BASE": {
+        "code": "?BKFL_BASE",
+        "description": "Depth to base of section",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?BKFL_LEG": {
+        "code": "?BKFL_LEG",
+        "description": "Backfill legend code",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?BKFL_DATE": {
+        "code": "?BKFL_DATE",
+        "description": "Date of backfill",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": true
+      },
+      "?BKFL_REM": {
+        "code": "?BKFL_REM",
+        "description": "Backfill remarks",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?FILE_FSET": {
+        "code": "?FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      }
+    },
+    "?BTVT": {
+      "?HOLE_ID": {
+        "code": "?HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?BTVT_DD": {
+        "code": "?BTVT_DD",
+        "description": "Dip direction",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": true
+      },
+      "?BTVT_DA": {
+        "code": "?BTVT_DA",
+        "description": "Dip angle",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": true
+      },
+      "?BTVT_APTR": {
+        "code": "?BTVT_APTR",
+        "description": "Joint aperture",
+        "type": "Double(2)",
+        "unit": "mm",
+        "optional": true
+      },
+      "?BTVT_RGHN": {
+        "code": "?BTVT_RGHN",
+        "description": "Joint roughness",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?BTVT_JCDN": {
+        "code": "?BTVT_JCDN",
+        "description": "Joint condition",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?BTVT_REM": {
+        "code": "?BTVT_REM",
+        "description": "Remarks",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      }
+    },
+    "CDIA": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CDIA_CDEP": {
+        "code": "CDIA_CDEP",
+        "description": "Depth achieved at CDIA_HOLE",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "CDIA_HOLE": {
+        "code": "CDIA_HOLE",
+        "description": "Casing diameter",
+        "type": "Integer",
+        "unit": "mm",
+        "optional": false
+      },
+      "CDIA_REM": {
+        "code": "CDIA_REM",
+        "description": "Remarks",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "CLSS": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TOP": {
+        "code": "SAMP_TOP",
+        "description": "Depth to top of test sample",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "SAMP_REF": {
+        "code": "SAMP_REF",
+        "description": "Sample reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TYPE": {
+        "code": "SAMP_TYPE",
+        "description": "Sample type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_REF": {
+        "code": "SPEC_REF",
+        "description": "Specimen reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_DPTH": {
+        "code": "SPEC_DPTH",
+        "description": "Specimen depth",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "CLSS_NMC": {
+        "code": "CLSS_NMC",
+        "description": "Natural moisture content",
+        "type": "Integer",
+        "unit": "%",
+        "optional": false
+      },
+      "CLSS_LL": {
+        "code": "CLSS_LL",
+        "description": "Liquid limit",
+        "type": "Integer",
+        "unit": "%",
+        "optional": false
+      },
+      "CLSS_PL": {
+        "code": "CLSS_PL",
+        "description": "Plastic limit",
+        "type": "Integer",
+        "unit": "%",
+        "optional": false
+      },
+      "CLSS_BDEN": {
+        "code": "CLSS_BDEN",
+        "description": "Bulk density",
+        "type": "Double(2)",
+        "unit": "Mg/m3",
+        "optional": false
+      },
+      "CLSS_DDEN": {
+        "code": "CLSS_DDEN",
+        "description": "Dry density",
+        "type": "Double(2)",
+        "unit": "Mg/m3",
+        "optional": false
+      },
+      "CLSS_PD": {
+        "code": "CLSS_PD",
+        "description": "Particle density",
+        "type": "Double(2)",
+        "unit": "Mg/m3",
+        "optional": false
+      },
+      "CLSS_425": {
+        "code": "CLSS_425",
+        "description": "Percentage passing 425 µm sieve",
+        "type": "Integer",
+        "unit": "%",
+        "optional": false
+      },
+      "CLSS_PREP": {
+        "code": "CLSS_PREP",
+        "description": "Method of preparation",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CLSS_SLIM": {
+        "code": "CLSS_SLIM",
+        "description": "Shrinkage limit",
+        "type": "Integer",
+        "unit": "%",
+        "optional": false
+      },
+      "CLSS_LS": {
+        "code": "CLSS_LS",
+        "description": "Linear shrinkage",
+        "type": "Integer",
+        "unit": "%",
+        "optional": false
+      },
+      "CLSS_HVP": {
+        "code": "CLSS_HVP",
+        "description": "Hand vane undrained shear strength (peak)",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "CLSS_HVR": {
+        "code": "CLSS_HVR",
+        "description": "Hand vane undrained shear strength (remoulded)",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "CLSS_PPEN": {
+        "code": "CLSS_PPEN",
+        "description": "Pocket penetrometer undrained shear strength",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "CLSS_VNPK": {
+        "code": "CLSS_VNPK",
+        "description": "Laboratory vane undrained shear strength (peak)",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "CLSS_VNRM": {
+        "code": "CLSS_VNRM",
+        "description": "Laboratory vane undrained shear strength (remoulded)",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "?CLSS_REM": {
+        "code": "?CLSS_REM",
+        "description": "Notes on classification testing",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?FILE_FSET": {
+        "code": "?FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      }
+    },
+    "CNMT": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TOP": {
+        "code": "SAMP_TOP",
+        "description": "Depth to top of test sample",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "SAMP_REF": {
+        "code": "SAMP_REF",
+        "description": "Sample reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TYPE": {
+        "code": "SAMP_TYPE",
+        "description": "Sample type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_REF": {
+        "code": "SPEC_REF",
+        "description": "Specimen reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_DPTH": {
+        "code": "SPEC_DPTH",
+        "description": "Specimen depth",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "CNMT_TYPE": {
+        "code": "CNMT_TYPE",
+        "description": "Determinand",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CNMT_TTYP": {
+        "code": "CNMT_TTYP",
+        "description": "Test type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CNMT_RESL": {
+        "code": "CNMT_RESL",
+        "description": "Test result",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CNMT_UNIT": {
+        "code": "CNMT_UNIT",
+        "description": "Test result units",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CNMT_CAS": {
+        "code": "CNMT_CAS",
+        "description": "Chemical abstract service registry number (where appropriate)",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CNMT_METH": {
+        "code": "CNMT_METH",
+        "description": "Test method",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CNMT_PREP": {
+        "code": "CNMT_PREP",
+        "description": "Sample preparation",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CNMT_REM": {
+        "code": "CNMT_REM",
+        "description": "Comments on test",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CNMT_LIM": {
+        "code": "CNMT_LIM",
+        "description": "Method lower detection limit",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "?CNMT_ULIM": {
+        "code": "?CNMT_ULIM",
+        "description": "Method upper detection limit",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "CNMT_NAME": {
+        "code": "CNMT_NAME",
+        "description": "Client/laboratory preferred name of determinand",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CNMT_LAB": {
+        "code": "CNMT_LAB",
+        "description": "Name of testing laboratory/Organisation",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CNMT_CRED": {
+        "code": "CNMT_CRED",
+        "description": "Accrediting body (When appropriate)",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "?CNMT_LBID": {
+        "code": "?CNMT_LBID",
+        "description": "Laboratory internal reference",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "CODE": {
+      "CODE_CODE": {
+        "code": "CODE_CODE",
+        "description": "Code",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CODE_DESC": {
+        "code": "CODE_DESC",
+        "description": "Code description",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "CONG": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TOP": {
+        "code": "SAMP_TOP",
+        "description": "Depth to top of test sample",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "SAMP_REF": {
+        "code": "SAMP_REF",
+        "description": "Sample reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TYPE": {
+        "code": "SAMP_TYPE",
+        "description": "Sample type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_REF": {
+        "code": "SPEC_REF",
+        "description": "Specimen reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_DPTH": {
+        "code": "SPEC_DPTH",
+        "description": "Specimen depth",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "CONG_TYPE": {
+        "code": "CONG_TYPE",
+        "description": "Oedometer or Rowe, primary of secondary consolidation",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CONG_COND": {
+        "code": "CONG_COND",
+        "description": "Sample condition",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CONG_REM": {
+        "code": "CONG_REM",
+        "description": "Test details including method statement",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CONG_INCM": {
+        "code": "CONG_INCM",
+        "description": "Coefficient of volume compressibility over CONG_INCD",
+        "type": "Double(3)",
+        "unit": "m2/MN",
+        "optional": false
+      },
+      "CONG_INCD": {
+        "code": "CONG_INCD",
+        "description": "Defined stress range",
+        "type": "Text",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "CONG_DIA": {
+        "code": "CONG_DIA",
+        "description": "Test specimen diameter",
+        "type": "Double(1)",
+        "unit": "mm",
+        "optional": false
+      },
+      "CONG_HIGT": {
+        "code": "CONG_HIGT",
+        "description": "Test specimen height",
+        "type": "Double(1)",
+        "unit": "mm",
+        "optional": false
+      },
+      "CONG_MCI": {
+        "code": "CONG_MCI",
+        "description": "Initial moisture content",
+        "type": "Double(2)",
+        "unit": "%",
+        "optional": false
+      },
+      "CONG_MCF": {
+        "code": "CONG_MCF",
+        "description": "Final moisture content",
+        "type": "Double(2)",
+        "unit": "%",
+        "optional": false
+      },
+      "CONG_BDEN": {
+        "code": "CONG_BDEN",
+        "description": "Initial bulk density",
+        "type": "Double(2)",
+        "unit": "Mg/m3",
+        "optional": false
+      },
+      "CONG_DDEN": {
+        "code": "CONG_DDEN",
+        "description": "Initial dry density",
+        "type": "Double(2)",
+        "unit": "Mg/m3",
+        "optional": false
+      },
+      "CONG_PDEN": {
+        "code": "CONG_PDEN",
+        "description": "Particle density (BS 1377) with # if assumed",
+        "type": "Double(2)",
+        "unit": "Mg/m3",
+        "optional": false
+      },
+      "CONG_SATR": {
+        "code": "CONG_SATR",
+        "description": "Initial degree of saturation",
+        "type": "Double(2)",
+        "unit": "%",
+        "optional": false
+      },
+      "CONG_SPRS": {
+        "code": "CONG_SPRS",
+        "description": "Swelling pressure",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "CONG_SATH": {
+        "code": "CONG_SATH",
+        "description": "Height change of specimen on saturation as percentage of original height",
+        "type": "Double(2)",
+        "unit": "%",
+        "optional": false
+      },
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "?CONG_IVR": {
+        "code": "?CONG_IVR",
+        "description": "Initial voids ratio",
+        "type": "Double(2)",
+        "unit": "",
+        "optional": true
+      },
+      "?CONG_RCOM": {
+        "code": "?CONG_RCOM",
+        "description": "Recompression index before P'o",
+        "type": "Double(3)",
+        "unit": "",
+        "optional": true
+      },
+      "?CONG_COM": {
+        "code": "?CONG_COM",
+        "description": "Compression index over CONF_INCD",
+        "type": "Double(3)",
+        "unit": "",
+        "optional": true
+      },
+      "?CONG_PRCP": {
+        "code": "?CONG_PRCP",
+        "description": "Preconsolidated pressure",
+        "type": "Double(3)",
+        "unit": "kPa",
+        "optional": true
+      }
+    },
+    "CONS": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TOP": {
+        "code": "SAMP_TOP",
+        "description": "Depth to top of test sample",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "SAMP_REF": {
+        "code": "SAMP_REF",
+        "description": "Sample reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TYPE": {
+        "code": "SAMP_TYPE",
+        "description": "Sample type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_REF": {
+        "code": "SPEC_REF",
+        "description": "Specimen reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_DPTH": {
+        "code": "SPEC_DPTH",
+        "description": "Specimen depth",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "CONS_INCN": {
+        "code": "CONS_INCN",
+        "description": "Oedometer stress increment number",
+        "type": "Integer",
+        "unit": "",
+        "optional": false
+      },
+      "CONS_IVR": {
+        "code": "CONS_IVR",
+        "description": "Voids ratio at start of increment",
+        "type": "Double(2)",
+        "unit": "",
+        "optional": false
+      },
+      "CONS_INCF": {
+        "code": "CONS_INCF",
+        "description": "Stress at end of stress increment/decrement",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "CONS_INCE": {
+        "code": "CONS_INCE",
+        "description": "Voids ratio at end of stress increment",
+        "type": "Double(2)",
+        "unit": "",
+        "optional": false
+      },
+      "CONS_INMV": {
+        "code": "CONS_INMV",
+        "description": "Reported coefficient of volume compressibility over stress increment",
+        "type": "Double(2)",
+        "unit": "m2/MN",
+        "optional": false
+      },
+      "CONS_INCV": {
+        "code": "CONS_INCV",
+        "description": "Reported coefficient of consolidation over stress increment",
+        "type": "Double(2)",
+        "unit": "m2/yr",
+        "optional": false
+      },
+      "CONS_INSC": {
+        "code": "CONS_INSC",
+        "description": "Coefficient of secondary compression over stress increment",
+        "type": "Double(2)",
+        "unit": "",
+        "optional": false
+      },
+      "?CONS_CVRT": {
+        "code": "?CONS_CVRT",
+        "description": "Coefficient of consolidation determined by the root time method",
+        "type": "Double(2)",
+        "unit": "m2/yr",
+        "optional": true
+      },
+      "?CONS_CVLG": {
+        "code": "?CONS_CVLG",
+        "description": "Coefficient of consolidation determined by the log time method",
+        "type": "Double(2)",
+        "unit": "m2/yr",
+        "optional": true
+      },
+      "?CONS_REM": {
+        "code": "?CONS_REM",
+        "description": "Remarks including method used to determine coefficients reported under CONS_INMV and selected CONS_INCV (from either of ?CONS_CVRT or ?CONS_CVLG)",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      }
+    },
+    "CORE": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CORE_TOP": {
+        "code": "CORE_TOP",
+        "description": "Depth to top of core run",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "CORE_BOT": {
+        "code": "CORE_BOT",
+        "description": "Depth to bottom of core run",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "CORE_PREC": {
+        "code": "CORE_PREC",
+        "description": "Percentage of core recovered in core run (TCR)",
+        "type": "Integer",
+        "unit": "%",
+        "optional": false
+      },
+      "CORE_SREC": {
+        "code": "CORE_SREC",
+        "description": "Percentage of solid core recovered in core run (SCR)",
+        "type": "Integer",
+        "unit": "%",
+        "optional": false
+      },
+      "CORE_RQD": {
+        "code": "CORE_RQD",
+        "description": "Rock quality designation for core run (RQD)",
+        "type": "Integer",
+        "unit": "%",
+        "optional": false
+      },
+      "CORE_REM": {
+        "code": "CORE_REM",
+        "description": "Rotary remarks",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "CORE_DIAM": {
+        "code": "CORE_DIAM",
+        "description": "Core diameter",
+        "type": "Double(1)",
+        "unit": "mm",
+        "optional": false
+      },
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "DETL": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DETL_TOP": {
+        "code": "DETL_TOP",
+        "description": "Depth to top of detail description",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "DETL_BASE": {
+        "code": "DETL_BASE",
+        "description": "Depth to base of detail description",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "DETL_DESC": {
+        "code": "DETL_DESC",
+        "description": "Detail description",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "DICT": {
+      "DICT_TYPE": {
+        "code": "DICT_TYPE",
+        "description": "Flag to indicate definition is a GROUP or HEADING (ie can be either of GROUP or HEADING)",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DICT_GRP": {
+        "code": "DICT_GRP",
+        "description": "Group name",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DICT_HDNG": {
+        "code": "DICT_HDNG",
+        "description": "Heading name",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DICT_STAT": {
+        "code": "DICT_STAT",
+        "description": "Heading status KEY or COMMON (blank for Group)",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DICT_DESC": {
+        "code": "DICT_DESC",
+        "description": "Description",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DICT_UNIT": {
+        "code": "DICT_UNIT",
+        "description": "Units",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DICT_EXMP": {
+        "code": "DICT_EXMP",
+        "description": "Example",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "?DICT_PGRP": {
+        "code": "?DICT_PGRP",
+        "description": "Parent group name",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      }
+    },
+    "DISC": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DISC_TOP": {
+        "code": "DISC_TOP",
+        "description": "Depth to top in hole, or distance to start on traverse, of discontinuity zone, or discontinuity",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "DISC_BASE": {
+        "code": "DISC_BASE",
+        "description": "Depth to base in hole, or distance to end on traverse, of discontinuity zone",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "FRAC_SET": {
+        "code": "FRAC_SET",
+        "description": "Discontinuity set reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DISC_NUMB": {
+        "code": "DISC_NUMB",
+        "description": "Discontinuity number",
+        "type": "Integer",
+        "unit": "",
+        "optional": false
+      },
+      "DISC_TYPE": {
+        "code": "DISC_TYPE",
+        "description": "Type of discontinuity",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DISC_DIP": {
+        "code": "DISC_DIP",
+        "description": "Dip of discontinuity",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": false
+      },
+      "DISC_DIR": {
+        "code": "DISC_DIR",
+        "description": "Dip direction of discontinuity",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": false
+      },
+      "DISC_RGH": {
+        "code": "DISC_RGH",
+        "description": "Small scale roughness (ISRM 1978)",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DISC_PLAN": {
+        "code": "DISC_PLAN",
+        "description": "Intermediate scale planarity (ISRM 1978)",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DISC_WAVE": {
+        "code": "DISC_WAVE",
+        "description": "Large scale waviness, wavelength (ISRM 1978)",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "DISC_AMP": {
+        "code": "DISC_AMP",
+        "description": "Large scale waviness, amplitude (ISRM 1978)",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "DISC_JRC": {
+        "code": "DISC_JRC",
+        "description": "Joint roughness coefficient",
+        "type": "Integer",
+        "unit": "",
+        "optional": false
+      },
+      "DISC_APP": {
+        "code": "DISC_APP",
+        "description": "Surface appearance",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DISC_APT": {
+        "code": "DISC_APT",
+        "description": "Discontinuity aperture measurement",
+        "type": "Integer",
+        "unit": "mm",
+        "optional": false
+      },
+      "DISC_APOB": {
+        "code": "DISC_APOB",
+        "description": "Discontinuity aperture observation",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DISC_INFM": {
+        "code": "DISC_INFM",
+        "description": "Infilling material",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DISC_TERM": {
+        "code": "DISC_TERM",
+        "description": "Discontinuity termination (lower, upper) (ISRM 1978)",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DISC_PERS": {
+        "code": "DISC_PERS",
+        "description": "Persistence measurement",
+        "type": "Double(1)",
+        "unit": "m",
+        "optional": false
+      },
+      "DISC_STR": {
+        "code": "DISC_STR",
+        "description": "Discontinuity wall strength",
+        "type": "Double(1)",
+        "unit": "MPa",
+        "optional": false
+      },
+      "DISC_WETH": {
+        "code": "DISC_WETH",
+        "description": "Discontinuity wall weathering",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DISC_SEEP": {
+        "code": "DISC_SEEP",
+        "description": "Seepage rating (ISRM 1978)",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DISC_FLOW": {
+        "code": "DISC_FLOW",
+        "description": "Water flow estimate",
+        "type": "Double",
+        "unit": "l/min",
+        "optional": false
+      },
+      "DISC_REM": {
+        "code": "DISC_REM",
+        "description": "Remarks",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "DREM": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "DREM_DPTH": {
+        "code": "DREM_DPTH",
+        "description": "Depth of DREM_REM",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "?DREM_BDEP": {
+        "code": "?DREM_BDEP",
+        "description": "Base depth",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "DREM_REM": {
+        "code": "DREM_REM",
+        "description": "Depth related remark",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "FILE": {
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "File set reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "FILE_NAME": {
+        "code": "FILE_NAME",
+        "description": "File name",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "FILE_DESC": {
+        "code": "FILE_DESC",
+        "description": "Description of content",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "FILE_TYPE": {
+        "code": "FILE_TYPE",
+        "description": "File type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "FILE_PROG": {
+        "code": "FILE_PROG",
+        "description": "Parent program and version number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "?FILE_DOCT": {
+        "code": "?FILE_DOCT",
+        "description": "Document type",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "FILE_DATE": {
+        "code": "FILE_DATE",
+        "description": "File date",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": false
+      }
+    },
+    "FLSH": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "FLSH_FROM": {
+        "code": "FLSH_FROM",
+        "description": "Depth to top of flush zone",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "FLSH_TO": {
+        "code": "FLSH_TO",
+        "description": "Depth to bottom of flush zone",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "FLSH_TYPE": {
+        "code": "FLSH_TYPE",
+        "description": "Type of flush",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "FLSH_RETN": {
+        "code": "FLSH_RETN",
+        "description": "Flush return",
+        "type": "Integer",
+        "unit": "%",
+        "optional": false
+      },
+      "FLSH_COL": {
+        "code": "FLSH_COL",
+        "description": "Colour of flush return",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "FRAC": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "FRAC_TOP": {
+        "code": "FRAC_TOP",
+        "description": "Depth to top in hole, or distance to start on traverse, of the zone",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "FRAC_BASE": {
+        "code": "FRAC_BASE",
+        "description": "Depth to base in hole, or distance to end on traverse, of the zone",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "FRAC_SET": {
+        "code": "FRAC_SET",
+        "description": "Discontinuity set reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "FRAC_FI": {
+        "code": "FRAC_FI",
+        "description": "Fracture index over zone (fractures per metre)",
+        "type": "Integer",
+        "unit": "",
+        "optional": false
+      },
+      "FRAC_IMAX": {
+        "code": "FRAC_IMAX",
+        "description": "Maximum fracture spacing over zone",
+        "type": "Integer",
+        "unit": "mm",
+        "optional": false
+      },
+      "FRAC_IAVE": {
+        "code": "FRAC_IAVE",
+        "description": "Average fracture spacing over zone",
+        "type": "Integer",
+        "unit": "mm",
+        "optional": false
+      },
+      "FRAC_IMIN": {
+        "code": "FRAC_IMIN",
+        "description": "Minimum fracture spacing over zone",
+        "type": "Integer",
+        "unit": "mm",
+        "optional": false
+      },
+      "?FRAC_REM": {
+        "code": "?FRAC_REM",
+        "description": "Details on fracture spacing description",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      }
+    },
+    "GEOL": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "GEOL_TOP": {
+        "code": "GEOL_TOP",
+        "description": "Depth to top of stratum",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "GEOL_BASE": {
+        "code": "GEOL_BASE",
+        "description": "Depth to base of description",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "GEOL_DESC": {
+        "code": "GEOL_DESC",
+        "description": "General description of stratum",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "GEOL_LEG": {
+        "code": "GEOL_LEG",
+        "description": "Legend code",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "GEOL_GEOL": {
+        "code": "GEOL_GEOL",
+        "description": "Geology code",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "GEOL_GEO2": {
+        "code": "GEOL_GEO2",
+        "description": "Second geology code",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "?GEOL_GEO3": {
+        "code": "?GEOL_GEO3",
+        "description": "Third geology code",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "GEOL_STAT": {
+        "code": "GEOL_STAT",
+        "description": "Stratum reference shown on trial pit or traverse sketch",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "?GMJT": {
+      "?HOLE_ID": {
+        "code": "?HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?GMJT_DPTH": {
+        "code": "?GMJT_DPTH",
+        "description": "Depth of test zone",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?GMJT_TESN": {
+        "code": "?GMJT_TESN",
+        "description": "Test reference",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?GMJT_GMJ": {
+        "code": "?GMJT_GMJ",
+        "description": "Test result of modulus of deformation",
+        "type": "Double(2)",
+        "unit": "GPa",
+        "optional": true
+      }
+    },
+    "GRAD": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TOP": {
+        "code": "SAMP_TOP",
+        "description": "Depth to top of test sample",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "SAMP_REF": {
+        "code": "SAMP_REF",
+        "description": "Sample reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TYPE": {
+        "code": "SAMP_TYPE",
+        "description": "Sample type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_REF": {
+        "code": "SPEC_REF",
+        "description": "Specimen reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_DPTH": {
+        "code": "SPEC_DPTH",
+        "description": "Specimen depth",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "GRAD_SIZE": {
+        "code": "GRAD_SIZE",
+        "description": "Sieve or particle size",
+        "type": "Double(3)",
+        "unit": "mm",
+        "optional": false
+      },
+      "GRAD_PERP": {
+        "code": "GRAD_PERP",
+        "description": "Percentage passing/finer",
+        "type": "Double(2)",
+        "unit": "%",
+        "optional": false
+      },
+      "GRAD_TYPE": {
+        "code": "GRAD_TYPE",
+        "description": "Grading analysis test type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "HDIA": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "HDIA_HDEP": {
+        "code": "HDIA_HDEP",
+        "description": "Depth achieved at HDIA_HOLE",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "HDIA_HOLE": {
+        "code": "HDIA_HOLE",
+        "description": "Borehole diameter",
+        "type": "Integer",
+        "unit": "mm",
+        "optional": false
+      },
+      "?HDIA_REM": {
+        "code": "?HDIA_REM",
+        "description": "Remarks",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      }
+    },
+    "?HDPH": {
+      "?HOLE_ID": {
+        "code": "?HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?HDPH_TOP": {
+        "code": "?HDPH_TOP",
+        "description": "Depth to top of section",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?HDPH_BASE": {
+        "code": "?HDPH_BASE",
+        "description": "Depth to base of section",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?HOLE_TYPE": {
+        "code": "?HOLE_TYPE",
+        "description": "Type of exploratory hole",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?HDPH_STAR": {
+        "code": "?HDPH_STAR",
+        "description": "Date of start of section",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": true
+      },
+      "?HDPH_STAT": {
+        "code": "?HDPH_STAT",
+        "description": "Time of start of section",
+        "type": "Time",
+        "unit": "hhmm",
+        "optional": true
+      },
+      "?HDPH_ENDD": {
+        "code": "?HDPH_ENDD",
+        "description": "Date of end of section",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": true
+      },
+      "?HDPH_ENDT": {
+        "code": "?HDPH_ENDT",
+        "description": "Time of end of section",
+        "type": "Time",
+        "unit": "hhmm",
+        "optional": true
+      },
+      "?HDPH_CREW": {
+        "code": "?HDPH_CREW",
+        "description": "Name of crew",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?HDPH_LOG": {
+        "code": "?HDPH_LOG",
+        "description": "The definitive person responsible for logging the section",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?HDPH_EXC": {
+        "code": "?HDPH_EXC",
+        "description": "Plant used",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?HDPH_SHOR": {
+        "code": "?HDPH_SHOR",
+        "description": "Shoring/support used",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?HDPH_REM": {
+        "code": "?HDPH_REM",
+        "description": "Remarks",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?FILE_FSET": {
+        "code": "?FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      }
+    },
+    "HOLE": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "HOLE_TYPE": {
+        "code": "HOLE_TYPE",
+        "description": "Type of exploratory hole",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "HOLE_NATE": {
+        "code": "HOLE_NATE",
+        "description": "National grid easting of hole or start of traverse (based on SLA's SVY 21 system)",
+        "type": "Double(3)",
+        "unit": "m",
+        "optional": false
+      },
+      "HOLE_NATN": {
+        "code": "HOLE_NATN",
+        "description": "National grid northing of hole or start of traverse (based on SLA's SVY 21 system)",
+        "type": "Double(3)",
+        "unit": "m",
+        "optional": false
+      },
+      "HOLE_GL": {
+        "code": "HOLE_GL",
+        "description": "Ground level relative to datum of hole or start of traverse (based on SLA's Singapore Height Datum, SHD)",
+        "type": "Double(3)",
+        "unit": "m",
+        "optional": false
+      },
+      "?HOLE_CDL": {
+        "code": "?HOLE_CDL",
+        "description": "Chart datum level relative to datum of hole or start of traverse (based on MPA's Chart datum)",
+        "type": "Double(3)",
+        "unit": "m",
+        "optional": true
+      },
+      "HOLE_FDEP": {
+        "code": "HOLE_FDEP",
+        "description": "Final depth of hole",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "HOLE_STAR": {
+        "code": "HOLE_STAR",
+        "description": "Date of start of excavation",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": false
+      },
+      "HOLE_LOG": {
+        "code": "HOLE_LOG",
+        "description": "The definitive person responsible for logging the hole",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "HOLE_REM": {
+        "code": "HOLE_REM",
+        "description": "General remarks on hole",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "HOLE_ETRV": {
+        "code": "HOLE_ETRV",
+        "description": "National grid easting of end of traverse (based on SLA's SVY 21 system)",
+        "type": "Double(3)",
+        "unit": "m",
+        "optional": false
+      },
+      "HOLE_NTRV": {
+        "code": "HOLE_NTRV",
+        "description": "National grid northing of end of traverse (based on SLA's SVY 21 system)",
+        "type": "Double(3)",
+        "unit": "m",
+        "optional": false
+      },
+      "HOLE_LTRV": {
+        "code": "HOLE_LTRV",
+        "description": "Ground level relative to datum of end of traverse (based on SLA's Singapore Height Datum, SHD)",
+        "type": "Double(3)",
+        "unit": "m",
+        "optional": false
+      },
+      "HOLE_LETT": {
+        "code": "HOLE_LETT",
+        "description": "Ordnance survey letter grid reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "HOLE_LOCX": {
+        "code": "HOLE_LOCX",
+        "description": "Local grid x co-ordinate",
+        "type": "Double(3)",
+        "unit": "m",
+        "optional": false
+      },
+      "HOLE_LOCY": {
+        "code": "HOLE_LOCY",
+        "description": "Local grid y co-ordinate",
+        "type": "Double(3)",
+        "unit": "m",
+        "optional": false
+      },
+      "HOLE_LOCZ": {
+        "code": "HOLE_LOCZ",
+        "description": "Level to local datum",
+        "type": "Double(3)",
+        "unit": "m",
+        "optional": false
+      },
+      "HOLE_ENDD": {
+        "code": "HOLE_ENDD",
+        "description": "Hole end date",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": false
+      },
+      "HOLE_BACD": {
+        "code": "HOLE_BACD",
+        "description": "Hole backfill date",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": false
+      },
+      "HOLE_CREW": {
+        "code": "HOLE_CREW",
+        "description": "Name of driller",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "HOLE_ORNT": {
+        "code": "HOLE_ORNT",
+        "description": "Orientation of hole or traverse (degrees from north)",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": false
+      },
+      "HOLE_INCL": {
+        "code": "HOLE_INCL",
+        "description": "Inclination of hole or traverse (measured positively down from horizontal)",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": false
+      },
+      "HOLE_EXC": {
+        "code": "HOLE_EXC",
+        "description": "Plant used",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "HOLE_SHOR": {
+        "code": "HOLE_SHOR",
+        "description": "Shoring/support used",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "HOLE_STAB": {
+        "code": "HOLE_STAB",
+        "description": "Stability",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "HOLE_DIML": {
+        "code": "HOLE_DIML",
+        "description": "Trial pit or logged traverse length",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "HOLE_DIMW": {
+        "code": "HOLE_DIMW",
+        "description": "Trial pit or logged traverse width",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "HOLE_LOCM": {
+        "code": "HOLE_LOCM",
+        "description": "Method of location",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "HOLE_LOCA": {
+        "code": "HOLE_LOCA",
+        "description": "Location sub division within project",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "HOLE_CLST": {
+        "code": "HOLE_CLST",
+        "description": "Hole cluster reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "?HOLE_OFFS": {
+        "code": "?HOLE_OFFS",
+        "description": "Offset",
+        "type": "Double(2)",
+        "unit": "",
+        "optional": true
+      },
+      "?HOLE_CNGE": {
+        "code": "?HOLE_CNGE",
+        "description": "Chainage",
+        "type": "Double(2)",
+        "unit": "",
+        "optional": true
+      },
+      "?HOLE_STAT": {
+        "code": "?HOLE_STAT",
+        "description": "Status of hole information",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "?HOLE_FREC": {
+        "code": "?HOLE_FREC",
+        "description": "Hole field description",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      }
+    },
+    "?HORN": {
+      "?HOLE_ID": {
+        "code": "?HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?HORN_TOP": {
+        "code": "?HORN_TOP",
+        "description": "Depth to top of exploratory hole section",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?HORN_BASE": {
+        "code": "?HORN_BASE",
+        "description": "Depth to base of exploratory hole section",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?HORN_ORNT": {
+        "code": "?HORN_ORNT",
+        "description": "Orientation of exploratory hole section or traverse (degrees from north)",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": true
+      },
+      "?HORN_INCL": {
+        "code": "?HORN_INCL",
+        "description": "Inclination of exploratory hole section or traverse (measured positively down from horizontal)",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": true
+      },
+      "?HORN_REM": {
+        "code": "?HORN_REM",
+        "description": "Remarks relating to orientation and inclination of hole section",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?FILE_FSET": {
+        "code": "?FILE_FSET",
+        "description": "Associated file reference (e.g. test result sheets)",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?HORN_EAST": {
+        "code": "?HORN_EAST",
+        "description": "Easting for the top of inclined section",
+        "type": "Double(3)",
+        "unit": "m",
+        "optional": true
+      },
+      "?HORN_NOTH": {
+        "code": "?HORN_NOTH",
+        "description": "Northing for the top of inclined section",
+        "type": "Double(3)",
+        "unit": "m",
+        "optional": true
+      },
+      "?HORN_ELEV": {
+        "code": "?HORN_ELEV",
+        "description": "Elevation / depth for the top of inclined section",
+        "type": "Double(3)",
+        "unit": "m",
+        "optional": true
+      }
+    },
+    "IPRM": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "IPRM_TOP": {
+        "code": "IPRM_TOP",
+        "description": "Depth to top of test zone",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "IPRM_BASE": {
+        "code": "IPRM_BASE",
+        "description": "Depth to base of test zone",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "IPRM_STG": {
+        "code": "IPRM_STG",
+        "description": "Stage number of multistage packer test",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "?IPRM_TESN": {
+        "code": "?IPRM_TESN",
+        "description": "Test number",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "IPRM_TYPE": {
+        "code": "IPRM_TYPE",
+        "description": "Type of test",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "IPRM_PRWL": {
+        "code": "IPRM_PRWL",
+        "description": "Depth to water in borehole or piezometer immediately prior to test",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "IPRM_SWAL": {
+        "code": "IPRM_SWAL",
+        "description": "Depth to water at start of test",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "IPRM_TDIA": {
+        "code": "IPRM_TDIA",
+        "description": "Diameter of test zone",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "IPRM_SDIA": {
+        "code": "IPRM_SDIA",
+        "description": "Diameter of standpipe or casing",
+        "type": "Double(3)",
+        "unit": "m",
+        "optional": false
+      },
+      "IPRM_IPRM": {
+        "code": "IPRM_IPRM",
+        "description": "Permeability",
+        "type": "Double",
+        "unit": "m/s",
+        "optional": false
+      },
+      "IPRM_REM": {
+        "code": "IPRM_REM",
+        "description": "Test remarks",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "IPRM_FLOW": {
+        "code": "IPRM_FLOW",
+        "description": "Average flow during packer test stage",
+        "type": "Double(2)",
+        "unit": "l/s",
+        "optional": false
+      },
+      "IPRM_AWL": {
+        "code": "IPRM_AWL",
+        "description": "Depth to assumed standing water level",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "IPRM_HEAD": {
+        "code": "IPRM_HEAD",
+        "description": "Applied total head of water during test stage at centre of packer test zone",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "?IPRM_DATE": {
+        "code": "?IPRM_DATE",
+        "description": "Test date",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": true
+      },
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "IRES": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "IRES_DPTH": {
+        "code": "IRES_DPTH",
+        "description": "Depth range to which in-situ resistivity test relates",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "?IRES_TESN": {
+        "code": "?IRES_TESN",
+        "description": "Test number",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "IRES_TYPE": {
+        "code": "IRES_TYPE",
+        "description": "Type of resistivity test",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "?IRES_DATE": {
+        "code": "?IRES_DATE",
+        "description": "Test date",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": true
+      },
+      "IRES_IRES": {
+        "code": "IRES_IRES",
+        "description": "Result",
+        "type": "Double(2)",
+        "unit": "ohm cm",
+        "optional": false
+      },
+      "IRES_REM": {
+        "code": "IRES_REM",
+        "description": "Details of test e.g. electrode spacing and configuration",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "GEOL_STAT": {
+        "code": "GEOL_STAT",
+        "description": "Stratum reference shown on trial pit or traverse sketch",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "ISPT": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ISPT_TOP": {
+        "code": "ISPT_TOP",
+        "description": "Depth to top of test",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "ISPT_SEAT": {
+        "code": "ISPT_SEAT",
+        "description": "Number of blows for seating drive",
+        "type": "Integer",
+        "unit": "",
+        "optional": false
+      },
+      "ISPT_MAIN": {
+        "code": "ISPT_MAIN",
+        "description": "Number of blows for main test drive",
+        "type": "Integer",
+        "unit": "",
+        "optional": false
+      },
+      "ISPT_NPEN": {
+        "code": "ISPT_NPEN",
+        "description": "Total penetration for seating drive and test drive",
+        "type": "Integer",
+        "unit": "mm",
+        "optional": false
+      },
+      "ISPT_NVAL": {
+        "code": "ISPT_NVAL",
+        "description": "SPT 'N' value",
+        "type": "Integer",
+        "unit": "",
+        "optional": false
+      },
+      "ISPT_REP": {
+        "code": "ISPT_REP",
+        "description": "SPT reported result",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ISPT_CAS": {
+        "code": "ISPT_CAS",
+        "description": "Casing depth at time of test",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "ISPT_WAT": {
+        "code": "ISPT_WAT",
+        "description": "Depth to water at time of test",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "ISPT_TYPE": {
+        "code": "ISPT_TYPE",
+        "description": "Type of SPT test",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "?ISPT_SWP": {
+        "code": "?ISPT_SWP",
+        "description": "Self-weight penetration",
+        "type": "Integer",
+        "unit": "mm",
+        "optional": true
+      },
+      "ISPT_REM": {
+        "code": "ISPT_REM",
+        "description": "Remarks for SPT Hammer Serial Number (HSN) and Energy Ratio (ER)",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ISPT_INC1": {
+        "code": "ISPT_INC1",
+        "description": "Number of blows for 1st increment (Seating)",
+        "type": "Integer",
+        "unit": "",
+        "optional": false
+      },
+      "ISPT_INC2": {
+        "code": "ISPT_INC2",
+        "description": "Number of blows for 2nd increment (Seating)",
+        "type": "Integer",
+        "unit": "",
+        "optional": false
+      },
+      "ISPT_INC3": {
+        "code": "ISPT_INC3",
+        "description": "Number of blows for 1st increment (Test)",
+        "type": "Integer",
+        "unit": "",
+        "optional": false
+      },
+      "ISPT_INC4": {
+        "code": "ISPT_INC4",
+        "description": "Number of blows for 2nd increment (Test)",
+        "type": "Integer",
+        "unit": "",
+        "optional": false
+      },
+      "ISPT_INC5": {
+        "code": "ISPT_INC5",
+        "description": "Number of blows for 3rd increment (Test)",
+        "type": "Integer",
+        "unit": "",
+        "optional": false
+      },
+      "ISPT_INC6": {
+        "code": "ISPT_INC6",
+        "description": "Number of blows for 4th increment (Test)",
+        "type": "Integer",
+        "unit": "",
+        "optional": false
+      },
+      "ISPT_PEN1": {
+        "code": "ISPT_PEN1",
+        "description": "Penetration for 1st increment (Seating Drive)",
+        "type": "Integer",
+        "unit": "mm",
+        "optional": false
+      },
+      "ISPT_PEN2": {
+        "code": "ISPT_PEN2",
+        "description": "Penetration for 2nd increment (Seating Drive)",
+        "type": "Integer",
+        "unit": "mm",
+        "optional": false
+      },
+      "ISPT_PEN3": {
+        "code": "ISPT_PEN3",
+        "description": "Penetration for 1st increment (Test)",
+        "type": "Integer",
+        "unit": "mm",
+        "optional": false
+      },
+      "ISPT_PEN4": {
+        "code": "ISPT_PEN4",
+        "description": "Penetration for 2nd increment (Test)",
+        "type": "Integer",
+        "unit": "mm",
+        "optional": false
+      },
+      "ISPT_PEN5": {
+        "code": "ISPT_PEN5",
+        "description": "Penetration for 3rd increment (Test)",
+        "type": "Integer",
+        "unit": "mm",
+        "optional": false
+      },
+      "ISPT_PEN6": {
+        "code": "ISPT_PEN6",
+        "description": "Penetration for 4th increment (Test)",
+        "type": "Integer",
+        "unit": "mm",
+        "optional": false
+      }
+    },
+    "?ISTR": {
+      "?HOLE_ID": {
+        "code": "?HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?ISTR_TOP": {
+        "code": "?ISTR_TOP",
+        "description": "Depth to top of test zone",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?ISTR_TESN": {
+        "code": "?ISTR_TESN",
+        "description": "In-situ test number",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?ISTR_BASE": {
+        "code": "?ISTR_BASE",
+        "description": "Depth to base of test zone",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?ISTR_METH": {
+        "code": "?ISTR_METH",
+        "description": "Test method/instrument type",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?ISTR_MASH": {
+        "code": "?ISTR_MASH",
+        "description": "Maximum horizontal principal stress, S H (Calculated from equation)",
+        "type": "Double(2)",
+        "unit": "MPa",
+        "optional": true
+      },
+      "?ISTR_MISH": {
+        "code": "?ISTR_MISH",
+        "description": "Minimum horizontal principal stress, S h (Calculated from equation)",
+        "type": "Double(2)",
+        "unit": "MPa",
+        "optional": true
+      },
+      "?ISTR_SY": {
+        "code": "?ISTR_SY",
+        "description": "Vertical principal stress, S v (Calculated from equation)",
+        "type": "Double(2)",
+        "unit": "MPa",
+        "optional": true
+      },
+      "?ISTR_DIR": {
+        "code": "?ISTR_DIR",
+        "description": "Direction angle range of the acting maximum horizontal principal stress, S H",
+        "type": "Text",
+        "unit": "deg",
+        "optional": true
+      },
+      "?ISTR_TEN": {
+        "code": "?ISTR_TEN",
+        "description": "Hydraulic fracturing rock tensile strength",
+        "type": "Double(2)",
+        "unit": "MPa",
+        "optional": true
+      },
+      "?ISTR_REM": {
+        "code": "?ISTR_REM",
+        "description": "Notes on stress-depth relations/test remarks",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?FILE_FSET": {
+        "code": "?FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?GEOL_STAT": {
+        "code": "?GEOL_STAT",
+        "description": "Stratum reference shown on trial pit or traverse sketch",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      }
+    },
+    "IVAN": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "IVAN_DPTH": {
+        "code": "IVAN_DPTH",
+        "description": "Depth of vane test",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "IVAN_TESN": {
+        "code": "IVAN_TESN",
+        "description": "Vane test number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "IVAN_REM": {
+        "code": "IVAN_REM",
+        "description": "Details of vane test, vane size, vane type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "IVAN_IVAN": {
+        "code": "IVAN_IVAN",
+        "description": "Vane test result",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "IVAN_IVAR": {
+        "code": "IVAN_IVAR",
+        "description": "Vane test remoulded result",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "IVAN_IPEN": {
+        "code": "IVAN_IPEN",
+        "description": "Hand penetrometer result",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "?IVAN_DATE": {
+        "code": "?IVAN_DATE",
+        "description": "Test Date",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": true
+      },
+      "GEOL_STAT": {
+        "code": "GEOL_STAT",
+        "description": "Stratum reference shown on trial pit or traverse sketch",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "?LEMC": {
+      "?HOLE_ID": {
+        "code": "?HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?SAMP_TOP": {
+        "code": "?SAMP_TOP",
+        "description": "Depth to top of sample",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?SAMP_REF": {
+        "code": "?SAMP_REF",
+        "description": "Sample reference",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?SAMP_TYPE": {
+        "code": "?SAMP_TYPE",
+        "description": "Sample type",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?SPEC_REF": {
+        "code": "?SPEC_REF",
+        "description": "Specimen reference",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?SPEC_DPTH": {
+        "code": "?SPEC_DPTH",
+        "description": "Specimen depth",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?SPEC_DESC": {
+        "code": "?SPEC_DESC",
+        "description": "Specimen description",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?SPEC_PREP": {
+        "code": "?SPEC_PREP",
+        "description": "Details of specimen preparation including time between preparation and testing",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?LEMC_LEMC": {
+        "code": "?LEMC_LEMC",
+        "description": "Emerson class number",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?LEMC_WTYP": {
+        "code": "?LEMC_WTYP",
+        "description": "Type of water used",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?LEMC_TEMP": {
+        "code": "?LEMC_TEMP",
+        "description": "Temperature of water used",
+        "type": "Double(1)",
+        "unit": "DegC",
+        "optional": true
+      },
+      "?LEMC_METH": {
+        "code": "?LEMC_METH",
+        "description": "Test method",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?LEMC_LAB": {
+        "code": "?LEMC_LAB",
+        "description": "Name of testing laboratory/organisation",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?LEMC_CRED": {
+        "code": "?LEMC_CRED",
+        "description": "Accrediting body and reference number (when appropriate)",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?LEMC_STAT": {
+        "code": "?LEMC_STAT",
+        "description": "Test status",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?FILE_FSET": {
+        "code": "?FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      }
+    },
+    "?MONP": {
+      "?HOLE_ID": {
+        "code": "?HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?MONP_DIS": {
+        "code": "?MONP_DIS",
+        "description": "Distance of monitoring point from HOLE_ID",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?MONP_ID": {
+        "code": "?MONP_ID",
+        "description": "Monitoring point identifier",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?MONP_DATE": {
+        "code": "?MONP_DATE",
+        "description": "Installation date",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": true
+      },
+      "?MONP_TYPE": {
+        "code": "?MONP_TYPE",
+        "description": "Instrument type",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?MONP_TRZ": {
+        "code": "?MONP_TRZ",
+        "description": "Distance to start of response zone from HOLE_ID datum",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?MONP_BRZ": {
+        "code": "?MONP_BRZ",
+        "description": "Distance to end of response zone from HOLE_ID datum",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?MONP_BRGA": {
+        "code": "?MONP_BRGA",
+        "description": "Bearing of monitoring axis A (compass bearing)",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": true
+      },
+      "?MONP_BRGB": {
+        "code": "?MONP_BRGB",
+        "description": "Bearing of monitoring axis B (compass bearing)",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": true
+      },
+      "?MONP_BRGC": {
+        "code": "?MONP_BRGC",
+        "description": "Bearing of monitoring axis C (compass bearing)",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": true
+      },
+      "?MONP_INCA": {
+        "code": "?MONP_INCA",
+        "description": "Inclination of instrument axis A (measured positively down from horizontal)",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": true
+      },
+      "?MONP_INCB": {
+        "code": "?MONP_INCB",
+        "description": "Inclination of instrument axis B (measured positively down from horizontal)",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": true
+      },
+      "?MONP_INCC": {
+        "code": "?MONP_INCC",
+        "description": "Inclination of instrument axis C (measured positively down from horizontal)",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": true
+      },
+      "?MONP_RSCA": {
+        "code": "?MONP_RSCA",
+        "description": "Reading sign convention in direction A",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?MONP_RSCB": {
+        "code": "?MONP_RSCB",
+        "description": "Reading sign convention in direction B",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?MONP_RSCC": {
+        "code": "?MONP_RSCC",
+        "description": "Reading sign convention in direction C",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?MONP_REM": {
+        "code": "?MONP_REM",
+        "description": "Remarks",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?FILE_FSET": {
+        "code": "?FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      }
+    },
+    "?MONR": {
+      "?HOLE_ID": {
+        "code": "?HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?MONP_DIS": {
+        "code": "?MONP_DIS",
+        "description": "Distance of monitoring point from HOLE_ID",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?MONP_ID": {
+        "code": "?MONP_ID",
+        "description": "Monitoring point identifier",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?MONR_DATE": {
+        "code": "?MONR_DATE",
+        "description": "Date of reading",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": true
+      },
+      "?MONR_TIME": {
+        "code": "?MONR_TIME",
+        "description": "Time of reading",
+        "type": "Time",
+        "unit": "hhmmss",
+        "optional": true
+      },
+      "?MONR_WDEP": {
+        "code": "?MONR_WDEP",
+        "description": "Depth to water from HOLE_ID datum",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?MONR_WHD": {
+        "code": "?MONR_WHD",
+        "description": "Head of water above tip",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?MONR_DSPA": {
+        "code": "?MONR_DSPA",
+        "description": "Displacement in direction A",
+        "type": "Double(2)",
+        "unit": "mm",
+        "optional": true
+      },
+      "?MONR_DSPB": {
+        "code": "?MONR_DSPB",
+        "description": "Displacement in direction B",
+        "type": "Double(2)",
+        "unit": "mm",
+        "optional": true
+      },
+      "?MONR_DSPC": {
+        "code": "?MONR_DSPC",
+        "description": "Displacement in direction C",
+        "type": "Double(3)",
+        "unit": "mm",
+        "optional": true
+      },
+      "?MONR_PRES": {
+        "code": "?MONR_PRES",
+        "description": "Pressure",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": true
+      },
+      "?MONR_ANGA": {
+        "code": "?MONR_ANGA",
+        "description": "Rotation/Tilt in direction A",
+        "type": "Double(3)",
+        "unit": "deg",
+        "optional": true
+      },
+      "?MONR_ANGB": {
+        "code": "?MONR_ANGB",
+        "description": "Rotation/Tilt in direction B",
+        "type": "Double(3)",
+        "unit": "deg",
+        "optional": true
+      },
+      "?MONR_ANGC": {
+        "code": "?MONR_ANGC",
+        "description": "Rotation in direction C",
+        "type": "Double(3)",
+        "unit": "deg",
+        "optional": true
+      },
+      "?MONR_STRA": {
+        "code": "?MONR_STRA",
+        "description": "Strain in direction A",
+        "type": "Double(2)",
+        "unit": "%",
+        "optional": true
+      },
+      "?MONR_STRB": {
+        "code": "?MONR_STRB",
+        "description": "Strain in direction B",
+        "type": "Double(2)",
+        "unit": "%",
+        "optional": true
+      },
+      "?MONR_STRC": {
+        "code": "?MONR_STRC",
+        "description": "Strain in direction C",
+        "type": "Double(2)",
+        "unit": "%",
+        "optional": true
+      },
+      "?MONR_FORC": {
+        "code": "?MONR_FORC",
+        "description": "Force",
+        "type": "Double(2)",
+        "unit": "kN",
+        "optional": true
+      },
+      "?MONR_TEMP": {
+        "code": "?MONR_TEMP",
+        "description": "Temperature",
+        "type": "Double(2)",
+        "unit": "DegC",
+        "optional": true
+      },
+      "?MONR_EAST": {
+        "code": "?MONR_EAST",
+        "description": "Absolute position (Easting)",
+        "type": "Double(3)",
+        "unit": "m",
+        "optional": true
+      },
+      "?MONR_NRTH": {
+        "code": "?MONR_NRTH",
+        "description": "Absolute position (Northing)",
+        "type": "Double(3)",
+        "unit": "m",
+        "optional": true
+      },
+      "?MONR_LEV": {
+        "code": "?MONR_LEV",
+        "description": "Absolute position (Level)",
+        "type": "Double(3)",
+        "unit": "m",
+        "optional": true
+      },
+      "?MONR_GAUG": {
+        "code": "?MONR_GAUG",
+        "description": "Gauge length",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": true
+      },
+      "?MONR_FLOW": {
+        "code": "?MONR_FLOW",
+        "description": "Flow",
+        "type": "Double(2)",
+        "unit": "l/s",
+        "optional": true
+      },
+      "?MONR_REM": {
+        "code": "?MONR_REM",
+        "description": "Details for instrument reference, probe logger, serial numbers",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?FILE_FSET": {
+        "code": "?FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      }
+    },
+    "POBS": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PREF_TDEP": {
+        "code": "PREF_TDEP",
+        "description": "Depth to reference level of piezometer tip",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "POBS_DATE": {
+        "code": "POBS_DATE",
+        "description": "Date of piezometer reading",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": false
+      },
+      "POBS_TIME": {
+        "code": "POBS_TIME",
+        "description": "Time of piezometer reading",
+        "type": "Time",
+        "unit": "hhmmss",
+        "optional": false
+      },
+      "POBS_DEP": {
+        "code": "POBS_DEP",
+        "description": "Depth to water below ground surface",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "POBS_HEAD": {
+        "code": "POBS_HEAD",
+        "description": "Head of water above piezometer tip",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "POBS_REM": {
+        "code": "POBS_REM",
+        "description": "Remarks",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "PREF": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PREF_TDEP": {
+        "code": "PREF_TDEP",
+        "description": "Depth to reference level of piezometer tip",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "PREF_DATE": {
+        "code": "PREF_DATE",
+        "description": "Piezometer installation date",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": false
+      },
+      "PREF_TYPE": {
+        "code": "PREF_TYPE",
+        "description": "Piezometer type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PREF_TRPS": {
+        "code": "PREF_TRPS",
+        "description": "Depth to top of response zone",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "PREF_BRPS": {
+        "code": "PREF_BRPS",
+        "description": "Depth to base of response zone",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "PREF_REM": {
+        "code": "PREF_REM",
+        "description": "Details of type and depths of grouting and readout arrangements/locations",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "PRTD": {
+      "PRTG_REM": {
+        "code": "PRTG_REM",
+        "description": "Remarks",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PRTG_PRES": {
+        "code": "PRTG_PRES",
+        "description": "Total pressure in test cell",
+        "type": "Double(2)",
+        "unit": "",
+        "optional": false
+      },
+      "PRTG_VOL": {
+        "code": "PRTG_VOL",
+        "description": "Volumne change in test cell",
+        "type": "Double(2)",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "PRTG": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PRTD_TREF": {
+        "code": "PRTD_TREF",
+        "description": "Reference number of test",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PRTD_DPTH": {
+        "code": "PRTD_DPTH",
+        "description": "Depth of test",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "PRTD_DATE": {
+        "code": "PRTD_DATE",
+        "description": "Date of test",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": false
+      },
+      "PRTD_TYPE": {
+        "code": "PRTD_TYPE",
+        "description": "Pressuremeter type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PRTD_DIA": {
+        "code": "PRTD_DIA",
+        "description": "Uninflated diameter of pressuremeter",
+        "type": "Double(1)",
+        "unit": "mm",
+        "optional": false
+      },
+      "PRTG_HA1": {
+        "code": "PRTG_HA1",
+        "description": "Estimated horizontal stress, arm (pair) 1",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "PRTG_HA2": {
+        "code": "PRTG_HA2",
+        "description": "Estimated horizontal stress, arm (pair) 2",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "PRTG_HA3": {
+        "code": "PRTG_HA3",
+        "description": "Estimated horizontal stress, arm (pair) 3",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "PRTG_HAA": {
+        "code": "PRTG_HAA",
+        "description": "Estimated horizontal stress, average",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "PRTG_GIA1": {
+        "code": "PRTG_GIA1",
+        "description": "Initial shear modulus, arm (pair) 1",
+        "type": "Double(2)",
+        "unit": "MN/m2",
+        "optional": false
+      },
+      "PRTG_GIA2": {
+        "code": "PRTG_GIA2",
+        "description": "Initial shear modulus, arm (pair) 2",
+        "type": "Double(2)",
+        "unit": "MN/m2",
+        "optional": false
+      },
+      "PRTG_GIA3": {
+        "code": "PRTG_GIA3",
+        "description": "Initial shear modulus, arm (pair) 3",
+        "type": "Double(2)",
+        "unit": "MN/m2",
+        "optional": false
+      },
+      "PRTG_GIAA": {
+        "code": "PRTG_GIAA",
+        "description": "Initial shear modulus, average",
+        "type": "Double(2)",
+        "unit": "MN/m2",
+        "optional": false
+      },
+      "PRTG_CUA1": {
+        "code": "PRTG_CUA1",
+        "description": "Undrained shear strength, arm (pair) 1",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "PRTG_CUA2": {
+        "code": "PRTG_CUA2",
+        "description": "Undrained shear strength, arm (pair) 2",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "PRTG_CUA3": {
+        "code": "PRTG_CUA3",
+        "description": "Undrained shear strength, arm (pair) 3",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "PRTG_CUAA": {
+        "code": "PRTG_CUAA",
+        "description": "Undrained shear strength, average",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "PRTG_PLA1": {
+        "code": "PRTG_PLA1",
+        "description": "Limit pressure, arm (pair) 1",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "PRTG_PLA2": {
+        "code": "PRTG_PLA2",
+        "description": "Limit pressure, arm (pair) 2",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "PRTG_PLA3": {
+        "code": "PRTG_PLA3",
+        "description": "Limit pressure, arm (pair) 3",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "PRTG_PLAA": {
+        "code": "PRTG_PLAA",
+        "description": "Limit pressure, average",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "PRTG_AFA1": {
+        "code": "PRTG_AFA1",
+        "description": "Angle of friction, arm (pair) 1",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": false
+      },
+      "PRTG_AFA2": {
+        "code": "PRTG_AFA2",
+        "description": "Angle of friction, arm (pair) 2",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": false
+      },
+      "PRTG_AFA3": {
+        "code": "PRTG_AFA3",
+        "description": "Angle of friction, arm (pair) 3",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": false
+      },
+      "PRTG_AFAA": {
+        "code": "PRTG_AFAA",
+        "description": "Angle of friction, average",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": false
+      },
+      "PRTG_ADA1": {
+        "code": "PRTG_ADA1",
+        "description": "Angle of dilation, arm (pair) 1",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": false
+      },
+      "PRTG_ADA2": {
+        "code": "PRTG_ADA2",
+        "description": "Angle of dilation, arm (pair) 2",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": false
+      },
+      "PRTG_ADA3": {
+        "code": "PRTG_ADA3",
+        "description": "Angle of dilation, arm (pair) 3",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": false
+      },
+      "PRTG_ADAA": {
+        "code": "PRTG_ADAA",
+        "description": "Angle of dilation, average",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": false
+      },
+      "PRTG_AFCV": {
+        "code": "PRTG_AFCV",
+        "description": "Angle of friction at constant volume (φcv ) used",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": false
+      },
+      "PRTG_REM": {
+        "code": "PRTG_REM",
+        "description": "Remarks",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "?PRTG_CRP": {
+        "code": "?PRTG_CRP",
+        "description": "Creep pressure",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": true
+      },
+      "?PRTG_MPMI": {
+        "code": "?PRTG_MPMI",
+        "description": "Menard pressure modulus (Natural)",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": true
+      },
+      "?PRTG_MPMR": {
+        "code": "?PRTG_MPMR",
+        "description": "Menard pressure modulus (Reload)",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": true
+      }
+    },
+    "PRTL": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PRTD_TREF": {
+        "code": "PRTD_TREF",
+        "description": "Reference number of test",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PRTD_DPTH": {
+        "code": "PRTD_DPTH",
+        "description": "Depth of test",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "PRTL_LNO": {
+        "code": "PRTL_LNO",
+        "description": "Unload/Reload loop number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PRTD_DATE": {
+        "code": "PRTD_DATE",
+        "description": "Date of test",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": false
+      },
+      "PRTD_TYPE": {
+        "code": "PRTD_TYPE",
+        "description": "Pressuremeter type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PRTD_DIA": {
+        "code": "PRTD_DIA",
+        "description": "Uninflated diameter of pressuremeter",
+        "type": "Double(1)",
+        "unit": "mm",
+        "optional": false
+      },
+      "PRTL_GA1": {
+        "code": "PRTL_GA1",
+        "description": "Unload/reload shear modulus, arm (pair) 1",
+        "type": "Double(2)",
+        "unit": "MN/m2",
+        "optional": false
+      },
+      "PRTL_GA2": {
+        "code": "PRTL_GA2",
+        "description": "Unload/reload shear modulus, arm (pair) 2",
+        "type": "Double(2)",
+        "unit": "MN/m2",
+        "optional": false
+      },
+      "PRTL_GA3": {
+        "code": "PRTL_GA3",
+        "description": "Unload/reload shear modulus, arm (pair) 3",
+        "type": "Double(2)",
+        "unit": "MN/m2",
+        "optional": false
+      },
+      "PRTL_GAA": {
+        "code": "PRTL_GAA",
+        "description": "Unload/reload shear modulus, average",
+        "type": "Double(2)",
+        "unit": "MN/m2",
+        "optional": false
+      }
+    },
+    "PTIM": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PTIM_DATE": {
+        "code": "PTIM_DATE",
+        "description": "Date of progress reading",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": false
+      },
+      "PTIM_TIME": {
+        "code": "PTIM_TIME",
+        "description": "Time of progress reading",
+        "type": "Time",
+        "unit": "hhmm",
+        "optional": false
+      },
+      "PTIM_DEP": {
+        "code": "PTIM_DEP",
+        "description": "Hole depth at PTIM_TIME",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "PTIM_CAS": {
+        "code": "PTIM_CAS",
+        "description": "Depth of casing at PTIM_TIME",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "PTIM_WAT": {
+        "code": "PTIM_WAT",
+        "description": "Depth to water at PTIM_TIME",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "PTIM_REM": {
+        "code": "PTIM_REM",
+        "description": "Remarks at PTIM_TIME",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "PTST": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TOP": {
+        "code": "SAMP_TOP",
+        "description": "Depth to top of test sample",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "SAMP_REF": {
+        "code": "SAMP_REF",
+        "description": "Sample reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TYPE": {
+        "code": "SAMP_TYPE",
+        "description": "Sample type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_REF": {
+        "code": "SPEC_REF",
+        "description": "Specimen reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_DPTH": {
+        "code": "SPEC_DPTH",
+        "description": "Specimen Depth",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "PTST_TESN": {
+        "code": "PTST_TESN",
+        "description": "Permeability test number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PTST_REM": {
+        "code": "PTST_REM",
+        "description": "Permeability test method",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PTST_COND": {
+        "code": "PTST_COND",
+        "description": "Sample condition",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PTST_SZUN": {
+        "code": "PTST_SZUN",
+        "description": "Size cut off of material too coarse for testing",
+        "type": "Double(1)",
+        "unit": "mm",
+        "optional": false
+      },
+      "PTST_UNS": {
+        "code": "PTST_UNS",
+        "description": "Proportion of material too coarse for testing - BS 1377 Part5 cl 5.7",
+        "type": "Double(1)",
+        "unit": "%",
+        "optional": false
+      },
+      "PTST_DIA": {
+        "code": "PTST_DIA",
+        "description": "Diameter of test sample",
+        "type": "Double(1)",
+        "unit": "mm",
+        "optional": false
+      },
+      "PTST_LEN": {
+        "code": "PTST_LEN",
+        "description": "Length of test sample",
+        "type": "Double(1)",
+        "unit": "mm",
+        "optional": false
+      },
+      "PTST_MC": {
+        "code": "PTST_MC",
+        "description": "Initial moisture content of test sample",
+        "type": "Double(1)",
+        "unit": "%",
+        "optional": false
+      },
+      "PTST_BDEN": {
+        "code": "PTST_BDEN",
+        "description": "Initial bulk density of test sample",
+        "type": "Double(2)",
+        "unit": "Mg/m3",
+        "optional": false
+      },
+      "PTST_DDEN": {
+        "code": "PTST_DDEN",
+        "description": "Dry density of test sample",
+        "type": "Double(2)",
+        "unit": "Mg/m3",
+        "optional": false
+      },
+      "PTST_VOID": {
+        "code": "PTST_VOID",
+        "description": "Void ratio of test sample",
+        "type": "Double(2)",
+        "unit": "",
+        "optional": false
+      },
+      "PTST_K": {
+        "code": "PTST_K",
+        "description": "Coefficient of permeability",
+        "type": "Double",
+        "unit": "m/s",
+        "optional": false
+      },
+      "PTST_TSTR": {
+        "code": "PTST_TSTR",
+        "description": "Mean effective stress at which permeability measured (when measured in triaxial cell)",
+        "type": "Double(1)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "PTST_ISAT": {
+        "code": "PTST_ISAT",
+        "description": "Initial degree of saturation",
+        "type": "Double(1)",
+        "unit": "%",
+        "optional": false
+      },
+      "PTST_FSAT": {
+        "code": "PTST_FSAT",
+        "description": "Final degree of saturation",
+        "type": "Double(1)",
+        "unit": "%",
+        "optional": false
+      },
+      "PTST_PDEN": {
+        "code": "PTST_PDEN",
+        "description": "Particle density, measured or (#) assumed",
+        "type": "Double(2)",
+        "unit": "Mg/m3",
+        "optional": false
+      },
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "PUMP": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "PUMP_DATE": {
+        "code": "PUMP_DATE",
+        "description": "Date of reading",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": false
+      },
+      "PUMP_TIME": {
+        "code": "PUMP_TIME",
+        "description": "Time of reading",
+        "type": "Time",
+        "unit": "hhmmss",
+        "optional": false
+      },
+      "PUMP_DPTH": {
+        "code": "PUMP_DPTH",
+        "description": "Depth to water below ground",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "PUMP_QUAT": {
+        "code": "PUMP_QUAT",
+        "description": "Pumping rate from hole",
+        "type": "Double(1)",
+        "unit": "l/s",
+        "optional": false
+      },
+      "PUMP_REM": {
+        "code": "PUMP_REM",
+        "description": "Remarks",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "ROCK": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TOP": {
+        "code": "SAMP_TOP",
+        "description": "Depth to top of test sample",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "SAMP_REF": {
+        "code": "SAMP_REF",
+        "description": "Sample reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TYPE": {
+        "code": "SAMP_TYPE",
+        "description": "Sample type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_REF": {
+        "code": "SPEC_REF",
+        "description": "Specimen reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_DPTH": {
+        "code": "SPEC_DPTH",
+        "description": "Specimen depth",
+        "type": "Double(1)",
+        "unit": "m",
+        "optional": false
+      },
+      "ROCK_PLS": {
+        "code": "ROCK_PLS",
+        "description": "Uncorrected point load (Is)",
+        "type": "Double(1)",
+        "unit": "MN/m2",
+        "optional": false
+      },
+      "ROCK_PLSI": {
+        "code": "ROCK_PLSI",
+        "description": "Size corrected point load index (Is50)",
+        "type": "Double(1)",
+        "unit": "MN/m2",
+        "optional": false
+      },
+      "ROCK_PLTF": {
+        "code": "ROCK_PLTF",
+        "description": "Point load test type (A, D, L or P)",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_UCS": {
+        "code": "ROCK_UCS",
+        "description": "Uniaxial compressive strength (size corrected)",
+        "type": "Double(1)",
+        "unit": "MN/m2",
+        "optional": false
+      },
+      "ROCK_REM": {
+        "code": "ROCK_REM",
+        "description": "Remarks",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_PREM": {
+        "code": "ROCK_PREM",
+        "description": "Details additional to ROCK_PLTF",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_UREM": {
+        "code": "ROCK_UREM",
+        "description": "Notes on uniaxial compressive strength test, including sample dimensions",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_E": {
+        "code": "ROCK_E",
+        "description": "Elastic modulus",
+        "type": "Double(1)",
+        "unit": "MN/m2",
+        "optional": false
+      },
+      "ROCK_MU": {
+        "code": "ROCK_MU",
+        "description": "Poisson’s ratio",
+        "type": "Double(1)",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_BRAZ": {
+        "code": "ROCK_BRAZ",
+        "description": "Tensile strength by the Brazilian method",
+        "type": "Double(1)",
+        "unit": "MN/m2",
+        "optional": false
+      },
+      "ROCK_BREM": {
+        "code": "ROCK_BREM",
+        "description": "Notes on Brazilian tensile strength test including sample dimensions",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_PORO": {
+        "code": "ROCK_PORO",
+        "description": "Rock porosity",
+        "type": "Double(1)",
+        "unit": "%",
+        "optional": false
+      },
+      "ROCK_PORE": {
+        "code": "ROCK_PORE",
+        "description": "Notes on type of porosity test",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_MC": {
+        "code": "ROCK_MC",
+        "description": "Natural moisture content",
+        "type": "Double(1)",
+        "unit": "%",
+        "optional": false
+      },
+      "ROCK_BDEN": {
+        "code": "ROCK_BDEN",
+        "description": "Rock bulk density",
+        "type": "Double(2)",
+        "unit": "Mg/m3",
+        "optional": false
+      },
+      "ROCK_DDEN": {
+        "code": "ROCK_DDEN",
+        "description": "Rock dry density",
+        "type": "Double(2)",
+        "unit": "Mg/m3",
+        "optional": false
+      },
+      "ROCK_PDEN": {
+        "code": "ROCK_PDEN",
+        "description": "Aggregate particle density",
+        "type": "Double(2)",
+        "unit": "Mg/m3",
+        "optional": false
+      },
+      "ROCK_DREM": {
+        "code": "ROCK_DREM",
+        "description": "Aggregate particle density test method and notes",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_WTAB": {
+        "code": "ROCK_WTAB",
+        "description": "Aggregate water absorption",
+        "type": "Double(1)",
+        "unit": "%",
+        "optional": false
+      },
+      "ROCK_WREM": {
+        "code": "ROCK_WREM",
+        "description": "Aggregate water absorption test method and notes",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_SDI": {
+        "code": "ROCK_SDI",
+        "description": "Slake durability index",
+        "type": "Double(1)",
+        "unit": "%",
+        "optional": false
+      },
+      "ROCK_SREM": {
+        "code": "ROCK_SREM",
+        "description": "Slake durability test method and notes",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_SOUN": {
+        "code": "ROCK_SOUN",
+        "description": "Aggregate soundness test",
+        "type": "Double(1)",
+        "unit": "%",
+        "optional": false
+      },
+      "ROCK_MREM": {
+        "code": "ROCK_MREM",
+        "description": "Aggregate soundness test method and notes",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_ACV": {
+        "code": "ROCK_ACV",
+        "description": "Aggregate crushing value",
+        "type": "Double(1)",
+        "unit": "%",
+        "optional": false
+      },
+      "ROCK_CREM": {
+        "code": "ROCK_CREM",
+        "description": "Aggregate crushing value test method and notes",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_AIV": {
+        "code": "ROCK_AIV",
+        "description": "Aggregate impact value",
+        "type": "Double(1)",
+        "unit": "%",
+        "optional": false
+      },
+      "ROCK_IREM": {
+        "code": "ROCK_IREM",
+        "description": "Aggregate impact value test method and notes",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_LOSA": {
+        "code": "ROCK_LOSA",
+        "description": "Aggregate Los Angeles abrasion",
+        "type": "Double(1)",
+        "unit": "%",
+        "optional": false
+      },
+      "ROCK_LREM": {
+        "code": "ROCK_LREM",
+        "description": "Aggregate Los Angeles abrasion test method and notes",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_AAV": {
+        "code": "ROCK_AAV",
+        "description": "Aggregate abrasion value",
+        "type": "Double(2)",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_PSV": {
+        "code": "ROCK_PSV",
+        "description": "Aggregate polished stone value",
+        "type": "Double(1)",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_FI": {
+        "code": "ROCK_FI",
+        "description": "Aggregate flakiness index",
+        "type": "Double(1)",
+        "unit": "%",
+        "optional": false
+      },
+      "ROCK_EI": {
+        "code": "ROCK_EI",
+        "description": "Aggregate elongation index",
+        "type": "Double(1)",
+        "unit": "%",
+        "optional": false
+      },
+      "ROCK_DESC": {
+        "code": "ROCK_DESC",
+        "description": "Specimen description",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_SHOR": {
+        "code": "ROCK_SHOR",
+        "description": "Shore hardness",
+        "type": "Double(1)",
+        "unit": "",
+        "optional": false
+      },
+      "ROCK_PWAV": {
+        "code": "ROCK_PWAV",
+        "description": "P-wave velocity",
+        "type": "Double(1)",
+        "unit": "m/s",
+        "optional": false
+      },
+      "ROCK_SWAV": {
+        "code": "ROCK_SWAV",
+        "description": "S-wave velocity",
+        "type": "Double(1)",
+        "unit": "m/s",
+        "optional": false
+      },
+      "ROCK_EMOD": {
+        "code": "ROCK_EMOD",
+        "description": "Dynamic elastic modulus",
+        "type": "Double(1)",
+        "unit": "GPa",
+        "optional": false
+      },
+      "ROCK_SG": {
+        "code": "ROCK_SG",
+        "description": "Shear modulus derived from ROCK_SWAV",
+        "type": "Double(1)",
+        "unit": "GPa",
+        "optional": false
+      },
+      "ROCK_SWEL": {
+        "code": "ROCK_SWEL",
+        "description": "Rock swelling index",
+        "type": "Double(1)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "?ROCK_SCT": {
+        "code": "?ROCK_SCT",
+        "description": "Saw cut test",
+        "type": "Double(1)",
+        "unit": "deg",
+        "optional": true
+      },
+      "?ROCK_GSB": {
+        "code": "?ROCK_GSB",
+        "description": "Golder shear box test",
+        "type": "Double(1)",
+        "unit": "",
+        "optional": true
+      },
+      "?ROCK_ACST": {
+        "code": "?ROCK_ACST",
+        "description": "Abrasion cutter steel test",
+        "type": "Double(1)",
+        "unit": "",
+        "optional": true
+      },
+      "?ROCK_CERA": {
+        "code": "?ROCK_CERA",
+        "description": "Cerchar abrasivity test",
+        "type": "Double(1)",
+        "unit": "",
+        "optional": true
+      },
+      "?ROCK_BRIV": {
+        "code": "?ROCK_BRIV",
+        "description": "Brittleness value test",
+        "type": "Double(1)",
+        "unit": "",
+        "optional": true
+      },
+      "?ROCK_SJV": {
+        "code": "?ROCK_SJV",
+        "description": "Sivers' J-value test",
+        "type": "Double(1)",
+        "unit": "",
+        "optional": true
+      },
+      "?ROCK_PTRO": {
+        "code": "?ROCK_PTRO",
+        "description": "Petrographic analysis (Yes/No)",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      }
+    },
+    "SAMP": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TOP": {
+        "code": "SAMP_TOP",
+        "description": "Depth to top of sample",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "SAMP_REF": {
+        "code": "SAMP_REF",
+        "description": "Sample reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TYPE": {
+        "code": "SAMP_TYPE",
+        "description": "Sample type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_DIA": {
+        "code": "SAMP_DIA",
+        "description": "Sample diameter",
+        "type": "Double(1)",
+        "unit": "mm",
+        "optional": false
+      },
+      "SAMP_BASE": {
+        "code": "SAMP_BASE",
+        "description": "Depth to base of sample",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "SAMP_DESC": {
+        "code": "SAMP_DESC",
+        "description": "Sample description",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_UBLO": {
+        "code": "SAMP_UBLO",
+        "description": "Number of blows required to drive sampler",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_REM": {
+        "code": "SAMP_REM",
+        "description": "Sample remarks",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_DATE": {
+        "code": "SAMP_DATE",
+        "description": "Date sample taken",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": false
+      },
+      "SAMP_TIME": {
+        "code": "SAMP_TIME",
+        "description": "Time sample taken",
+        "type": "Time",
+        "unit": "hhmmss",
+        "optional": false
+      },
+      "SAMP_BAR": {
+        "code": "SAMP_BAR",
+        "description": "Barometric pressure at time of sampling",
+        "type": "Double(1)",
+        "unit": "kPa",
+        "optional": false
+      },
+      "SAMP_WDEP": {
+        "code": "SAMP_WDEP",
+        "description": "Depth to water below ground surface at time of sampling",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "SAMP_TEMP": {
+        "code": "SAMP_TEMP",
+        "description": "Sample temperature at time of sampling",
+        "type": "Double(1)",
+        "unit": "DegC",
+        "optional": false
+      },
+      "SAMP_PRES": {
+        "code": "SAMP_PRES",
+        "description": "Gas pressure (above barometric)",
+        "type": "Double(1)",
+        "unit": "kPa",
+        "optional": false
+      },
+      "SAMP_FLOW": {
+        "code": "SAMP_FLOW",
+        "description": "Gas flow",
+        "type": "Double(1)",
+        "unit": "l/min",
+        "optional": false
+      },
+      "?SAMP_PREP": {
+        "code": "?SAMP_PREP",
+        "description": "Details of sample preparation",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "GEOL_STAT": {
+        "code": "GEOL_STAT",
+        "description": "Stratum reference shown on trial pit or traverse sketch",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "SHBG": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TOP": {
+        "code": "SAMP_TOP",
+        "description": "Depth to top of test sample",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "SAMP_REF": {
+        "code": "SAMP_REF",
+        "description": "Sample reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TYPE": {
+        "code": "SAMP_TYPE",
+        "description": "Sample type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_REF": {
+        "code": "SPEC_REF",
+        "description": "Specimen reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_DPTH": {
+        "code": "SPEC_DPTH",
+        "description": "Specimen depth",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "SHBG_TYPE": {
+        "code": "SHBG_TYPE",
+        "description": "Test type e.g. small shear box, large shear box, ring shear",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SHBG_REM": {
+        "code": "SHBG_REM",
+        "description": "Test notes e.g. undisturbed, pre-existing shear, recompacted, rock joint, cut plane",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SHBG_PCOH": {
+        "code": "SHBG_PCOH",
+        "description": "Peak cohesion intercept",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "SHBG_PHI": {
+        "code": "SHBG_PHI",
+        "description": "Peak angle of friction",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": false
+      },
+      "SHBG_RCOH": {
+        "code": "SHBG_RCOH",
+        "description": "Residual cohesion intercept",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "SHBG_RPHI": {
+        "code": "SHBG_RPHI",
+        "description": "Residual angle of friction",
+        "type": "Integer",
+        "unit": "deg",
+        "optional": false
+      },
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "SHBT": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TOP": {
+        "code": "SAMP_TOP",
+        "description": "Depth to top of test sample",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "SAMP_REF": {
+        "code": "SAMP_REF",
+        "description": "Sample reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TYPE": {
+        "code": "SAMP_TYPE",
+        "description": "Sample type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_REF": {
+        "code": "SPEC_REF",
+        "description": "Specimen reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_DPTH": {
+        "code": "SPEC_DPTH",
+        "description": "Specimen depth",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "SHBT_TESN": {
+        "code": "SHBT_TESN",
+        "description": "Shear box stage number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SHBT_BDEN": {
+        "code": "SHBT_BDEN",
+        "description": "Bulk density",
+        "type": "Double(2)",
+        "unit": "Mg/m3",
+        "optional": false
+      },
+      "SHBT_DDEN": {
+        "code": "SHBT_DDEN",
+        "description": "Dry density",
+        "type": "Double(2)",
+        "unit": "Mg/m3",
+        "optional": false
+      },
+      "SHBT_NORM": {
+        "code": "SHBT_NORM",
+        "description": "Shear box normal stress",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "SHBT_DISP": {
+        "code": "SHBT_DISP",
+        "description": "Displacement rate",
+        "type": "Double(2)",
+        "unit": "mm/min",
+        "optional": false
+      },
+      "SHBT_PEAK": {
+        "code": "SHBT_PEAK",
+        "description": "Shear box peak shear stress",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "SHBT_RES": {
+        "code": "SHBT_RES",
+        "description": "Shear box residual shear stress",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "SHBT_PDIS": {
+        "code": "SHBT_PDIS",
+        "description": "Displacement at peak shear strength",
+        "type": "Double(2)",
+        "unit": "mm",
+        "optional": false
+      },
+      "SHBT_RDIS": {
+        "code": "SHBT_RDIS",
+        "description": "Displacement at residual shear strength",
+        "type": "Double(2)",
+        "unit": "mm",
+        "optional": false
+      },
+      "SHBT_PDEN": {
+        "code": "SHBT_PDEN",
+        "description": "Particle density - measured or (#) assumed",
+        "type": "Double(2)",
+        "unit": "Mg/m3",
+        "optional": false
+      },
+      "SHBT_IVR": {
+        "code": "SHBT_IVR",
+        "description": "Initial void ratio",
+        "type": "Double(1)",
+        "unit": "",
+        "optional": false
+      },
+      "SHBT_MCI": {
+        "code": "SHBT_MCI",
+        "description": "Initial moisture content",
+        "type": "Double(2)",
+        "unit": "%",
+        "optional": false
+      },
+      "SHBT_MCF": {
+        "code": "SHBT_MCF",
+        "description": "Final moisture content",
+        "type": "Double(2)",
+        "unit": "%",
+        "optional": false
+      },
+      "?SHBT_REM": {
+        "code": "?SHBT_REM",
+        "description": "Remarks on test stage",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      }
+    },
+    "STCN": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "STCN_DPTH": {
+        "code": "STCN_DPTH",
+        "description": "Depth of result for static cone test",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "STCN_TYP": {
+        "code": "STCN_TYP",
+        "description": "Cone test type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "STCN_REF": {
+        "code": "STCN_REF",
+        "description": "Cone identification reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "STCN_RES": {
+        "code": "STCN_RES",
+        "description": "Cone resistance",
+        "type": "Double(4)",
+        "unit": "MN/m2",
+        "optional": false
+      },
+      "STCN_FRES": {
+        "code": "STCN_FRES",
+        "description": "Local unit side friction resistance",
+        "type": "Double(4)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "STCN_PWP1": {
+        "code": "STCN_PWP1",
+        "description": "Porewater pressure",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "STCN_PWP2": {
+        "code": "STCN_PWP2",
+        "description": "Second porewater pressure",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "STCN_PWP3": {
+        "code": "STCN_PWP3",
+        "description": "Third porewater pressure",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "STCN_CON": {
+        "code": "STCN_CON",
+        "description": "Conductivity",
+        "type": "Double(2)",
+        "unit": "uS/cm",
+        "optional": false
+      },
+      "STCN_TEMP": {
+        "code": "STCN_TEMP",
+        "description": "Temperature",
+        "type": "Double(1)",
+        "unit": "DegC",
+        "optional": false
+      },
+      "STCN_PH": {
+        "code": "STCN_PH",
+        "description": "pH reading",
+        "type": "Double(1)",
+        "unit": "",
+        "optional": false
+      },
+      "STCN_SLP1": {
+        "code": "STCN_SLP1",
+        "description": "Slope indicator no. 1",
+        "type": "Double(1)",
+        "unit": "deg",
+        "optional": false
+      },
+      "STCN_SLP2": {
+        "code": "STCN_SLP2",
+        "description": "Slope indicator no. 2",
+        "type": "Double(1)",
+        "unit": "deg",
+        "optional": false
+      },
+      "STCN_REDX": {
+        "code": "STCN_REDX",
+        "description": "Redox potential reading",
+        "type": "Double(1)",
+        "unit": "mV",
+        "optional": false
+      },
+      "STCN_FFD": {
+        "code": "STCN_FFD",
+        "description": "Fluorescence intensity",
+        "type": "Double(1)",
+        "unit": "%",
+        "optional": false
+      },
+      "STCN_PMT": {
+        "code": "STCN_PMT",
+        "description": "Photo-multiplier tube reading",
+        "type": "Double(1)",
+        "unit": "counts/s",
+        "optional": false
+      },
+      "STCN_PID": {
+        "code": "STCN_PID",
+        "description": "Photo ionization detector reading",
+        "type": "Double(1)",
+        "unit": "uV",
+        "optional": false
+      },
+      "STCN_FID": {
+        "code": "STCN_FID",
+        "description": "Flame ionization detector reading",
+        "type": "Double(1)",
+        "unit": "uV",
+        "optional": false
+      },
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "?TREM": {
+      "?HOLE_ID": {
+        "code": "?HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?TREM_DATE": {
+        "code": "?TREM_DATE",
+        "description": "Date of remark",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": true
+      },
+      "?TREM_TIME": {
+        "code": "?TREM_TIME",
+        "description": "Time of remark",
+        "type": "Time",
+        "unit": "hhmmss",
+        "optional": true
+      },
+      "?TREM_REM": {
+        "code": "?TREM_REM",
+        "description": "Time related remark",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      },
+      "?FILE_FSET": {
+        "code": "?FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": true
+      }
+    },
+    "TRIG": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TOP": {
+        "code": "SAMP_TOP",
+        "description": "Depth to top of test sample",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "SAMP_REF": {
+        "code": "SAMP_REF",
+        "description": "Sample reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TYPE": {
+        "code": "SAMP_TYPE",
+        "description": "Sample type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_REF": {
+        "code": "SPEC_REF",
+        "description": "Specimen reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_DPTH": {
+        "code": "SPEC_DPTH",
+        "description": "Specimen depth",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "TRIG_TYPE": {
+        "code": "TRIG_TYPE",
+        "description": "Test type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "TRIG_COND": {
+        "code": "TRIG_COND",
+        "description": "Sample condition",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "TRIG_REM": {
+        "code": "TRIG_REM",
+        "description": "Test method, additional information, failure criteria",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "TRIG_CU": {
+        "code": "TRIG_CU",
+        "description": "Value of undrained shear strength",
+        "type": "Double(1)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "TRIG_COH": {
+        "code": "TRIG_COH",
+        "description": "Cohesion intercept associated with TRIG_PHI",
+        "type": "Double(1)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "TRIG_PHI": {
+        "code": "TRIG_PHI",
+        "description": "Angle of friction for effective shear strength triaxial test",
+        "type": "Double(1)",
+        "unit": "deg",
+        "optional": false
+      },
+      "FILE_FSET": {
+        "code": "FILE_FSET",
+        "description": "Associated file reference",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "?TRIG_PBT": {
+        "code": "?TRIG_PBT",
+        "description": "Coefficient of permeability at 20 degC",
+        "type": "Double",
+        "unit": "m/s",
+        "optional": true
+      }
+    },
+    "TRIX": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TOP": {
+        "code": "SAMP_TOP",
+        "description": "Depth to top of test sample",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "SAMP_REF": {
+        "code": "SAMP_REF",
+        "description": "Sample reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SAMP_TYPE": {
+        "code": "SAMP_TYPE",
+        "description": "Sample type",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_REF": {
+        "code": "SPEC_REF",
+        "description": "Specimen reference number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "SPEC_DPTH": {
+        "code": "SPEC_DPTH",
+        "description": "Specimen depth",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "TRIX_TESN": {
+        "code": "TRIX_TESN",
+        "description": "Triaxial test/stage number",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "TRIX_SDIA": {
+        "code": "TRIX_SDIA",
+        "description": "Specimen diameter",
+        "type": "Double(2)",
+        "unit": "mm",
+        "optional": false
+      },
+      "TRIX_MC": {
+        "code": "TRIX_MC",
+        "description": "Specimen initial moisture content",
+        "type": "Double(2)",
+        "unit": "%",
+        "optional": false
+      },
+      "TRIX_CELL": {
+        "code": "TRIX_CELL",
+        "description": "Total cell pressure",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "TRIX_DEVF": {
+        "code": "TRIX_DEVF",
+        "description": "Deviator stress at failure",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "TRIX_SLEN": {
+        "code": "TRIX_SLEN",
+        "description": "Sample length",
+        "type": "Double(2)",
+        "unit": "mm",
+        "optional": false
+      },
+      "TRIX_BDEN": {
+        "code": "TRIX_BDEN",
+        "description": "Initial bulk density",
+        "type": "Double(3)",
+        "unit": "Mg/m3",
+        "optional": false
+      },
+      "TRIX_DDEN": {
+        "code": "TRIX_DDEN",
+        "description": "Initial dry density",
+        "type": "Double(3)",
+        "unit": "Mg/m3",
+        "optional": false
+      },
+      "TRIX_PWPF": {
+        "code": "TRIX_PWPF",
+        "description": "Porewater pressure at failure",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "TRIX_PWPI": {
+        "code": "TRIX_PWPI",
+        "description": "Porewater pressure at start of shear stage",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": false
+      },
+      "?TRIX_CU": {
+        "code": "?TRIX_CU",
+        "description": "Value of undrained shear strength",
+        "type": "Double(2)",
+        "unit": "kN/m2",
+        "optional": true
+      },
+      "TRIX_STRN": {
+        "code": "TRIX_STRN",
+        "description": "Strain at failure",
+        "type": "Double(3)",
+        "unit": "%",
+        "optional": false
+      },
+      "TRIX_MODE": {
+        "code": "TRIX_MODE",
+        "description": "Mode of failure",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "UNIT": {
+      "UNIT_UNIT": {
+        "code": "UNIT_UNIT",
+        "description": "Unit Used",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "UNIT_DESC": {
+        "code": "UNIT_DESC",
+        "description": "Description",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "WETH": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "WETH_TOP": {
+        "code": "WETH_TOP",
+        "description": "Depth to top of weathering subdivision",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "WETH_BASE": {
+        "code": "WETH_BASE",
+        "description": "Depth to base of weathering subdivision",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "WETH_GRAD": {
+        "code": "WETH_GRAD",
+        "description": "Material weathering grade",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "WETH_REM": {
+        "code": "WETH_REM",
+        "description": "Remarks, weathering system used",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      }
+    },
+    "WSTK": {
+      "HOLE_ID": {
+        "code": "HOLE_ID",
+        "description": "Exploratory hole or location equivalent",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "WSTK_DEP": {
+        "code": "WSTK_DEP",
+        "description": "Depth to water strike",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "WSTK_NMIN": {
+        "code": "WSTK_NMIN",
+        "description": "Minutes after strike",
+        "type": "Time",
+        "unit": "mm",
+        "optional": false
+      },
+      "WSTK_CAS": {
+        "code": "WSTK_CAS",
+        "description": "Casing depth at time of water strike",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "WSTK_DATE": {
+        "code": "WSTK_DATE",
+        "description": "Date of water strike",
+        "type": "Date",
+        "unit": "dd/mm/yyyy",
+        "optional": false
+      },
+      "WSTK_TIME": {
+        "code": "WSTK_TIME",
+        "description": "Time of water strike",
+        "type": "Time",
+        "unit": "hhmm",
+        "optional": false
+      },
+      "WSTK_POST": {
+        "code": "WSTK_POST",
+        "description": "Depth to water after WSTK_NMIN minutes",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      },
+      "WSTK_FLOW": {
+        "code": "WSTK_FLOW",
+        "description": "Flow rate remarks",
+        "type": "Text",
+        "unit": "",
+        "optional": false
+      },
+      "WSTK_SEAL": {
+        "code": "WSTK_SEAL",
+        "description": "Depth at which water strike sealed by casing",
+        "type": "Double(2)",
+        "unit": "m",
+        "optional": false
+      }
+    }
+  },
+  "stats": {
+    "groups": 52,
+    "headings": 697,
+    "optionalGroups": 10,
+    "optionalHeadings": 168
+  },
+  "keysByGroup": {
+    "PROJ": [
+      {
+        "field": "PROJ_ID",
+        "keyType": "PK"
+      }
+    ],
+    "ABBR": [
+      {
+        "field": "ABBR_HDNG",
+        "keyType": "PK"
+      },
+      {
+        "field": "ABBR_CODE",
+        "keyType": "PK"
+      }
+    ],
+    "?BKFL": [
+      {
+        "field": "?HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "?BKFL_TOP",
+        "keyType": "PK"
+      }
+    ],
+    "?BTVT": [
+      {
+        "field": "?HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "?BTVT_TREF",
+        "keyType": "PK"
+      },
+      {
+        "field": "?BTVT_DPTH",
+        "keyType": "PK"
+      }
+    ],
+    "CDIA": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "CDIA_CDEP",
+        "keyType": "PK"
+      },
+      {
+        "field": "CDIA_HOLE",
+        "keyType": "PK"
+      }
+    ],
+    "CLSS": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TOP",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TYPE",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_DPTH",
+        "keyType": "FK"
+      }
+    ],
+    "CNMT": [
+      {
+        "field": "?HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TOP",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TYPE",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_DPTH",
+        "keyType": "FK"
+      },
+      {
+        "field": "CNMT_TYPE",
+        "keyType": "PK"
+      },
+      {
+        "field": "CNMT_TTYP",
+        "keyType": "PK"
+      }
+    ],
+    "CODE": [
+      {
+        "field": "CODE_CODE",
+        "keyType": "PK"
+      }
+    ],
+    "CONG": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TOP",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TYPE",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_DPTH",
+        "keyType": "FK"
+      }
+    ],
+    "CONS": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TOP",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TYPE",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_DPTH",
+        "keyType": "FK"
+      },
+      {
+        "field": "CONS_INCN",
+        "keyType": "PK"
+      }
+    ],
+    "DETL": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "DETL_TOP",
+        "keyType": "PK"
+      },
+      {
+        "field": "DETL_BASE",
+        "keyType": "PK"
+      }
+    ],
+    "DICT": [
+      {
+        "field": "DICT_TYPE",
+        "keyType": "PK"
+      },
+      {
+        "field": "DICT_GRP",
+        "keyType": "PK"
+      },
+      {
+        "field": "DICT_HDNG",
+        "keyType": "PK"
+      }
+    ],
+    "DISC": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "DISC_TOP",
+        "keyType": "PK"
+      },
+      {
+        "field": "DISC_BASE",
+        "keyType": "PK"
+      },
+      {
+        "field": "FRAC_SET",
+        "keyType": "FK"
+      },
+      {
+        "field": "DISC_NUMB",
+        "keyType": "PK"
+      }
+    ],
+    "DREM": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "DREM_DPTH",
+        "keyType": "PK"
+      }
+    ],
+    "FILE": [
+      {
+        "field": "FILE_FSET",
+        "keyType": "PK"
+      },
+      {
+        "field": "FILE_NAME",
+        "keyType": "PK"
+      }
+    ],
+    "FLSH": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "FLSH_FROM",
+        "keyType": "PK"
+      },
+      {
+        "field": "FLSH_TO",
+        "keyType": "PK"
+      }
+    ],
+    "FRAC": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "FRAC_TOP",
+        "keyType": "PK"
+      },
+      {
+        "field": "FRAC_BASE",
+        "keyType": "PK"
+      },
+      {
+        "field": "FRAC_SET",
+        "keyType": "PK"
+      }
+    ],
+    "GEOL": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "GEOL_TOP",
+        "keyType": "PK"
+      },
+      {
+        "field": "GEOL_BASE",
+        "keyType": "PK"
+      }
+    ],
+    "?GMJT": [
+      {
+        "field": "?HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "?GMJT_DPTH",
+        "keyType": "PK"
+      },
+      {
+        "field": "?GMJT_TESN",
+        "keyType": "PK"
+      }
+    ],
+    "GRAD": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TOP",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TYPE",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_DPTH",
+        "keyType": "FK"
+      },
+      {
+        "field": "GRAD_SIZE",
+        "keyType": "PK"
+      }
+    ],
+    "HDIA": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "HDIA_HDEP",
+        "keyType": "PK"
+      }
+    ],
+    "?HDPH": [
+      {
+        "field": "?HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "?HDPH_TOP",
+        "keyType": "PK"
+      }
+    ],
+    "HOLE": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "PK"
+      }
+    ],
+    "?HORN": [
+      {
+        "field": "?HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "?HORN_TOP",
+        "keyType": "PK"
+      },
+      {
+        "field": "?HORN_BASE",
+        "keyType": "PK"
+      }
+    ],
+    "IPRM": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "IPRM_TOP",
+        "keyType": "PK"
+      },
+      {
+        "field": "IPRM_BASE",
+        "keyType": "PK"
+      },
+      {
+        "field": "IPRM_STG",
+        "keyType": "PK"
+      },
+      {
+        "field": "?IPRM_TESN",
+        "keyType": "PK"
+      }
+    ],
+    "IRES": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "IRES_DPTH",
+        "keyType": "PK"
+      },
+      {
+        "field": "?IRES_TESN",
+        "keyType": "PK"
+      }
+    ],
+    "ISPT": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "ISPT_TOP",
+        "keyType": "PK"
+      }
+    ],
+    "?ISTR": [
+      {
+        "field": "?HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "?ISTR_TOP",
+        "keyType": "PK"
+      },
+      {
+        "field": "?ISTR_TESN",
+        "keyType": "PK"
+      }
+    ],
+    "IVAN": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "IVAN_DPTH",
+        "keyType": "PK"
+      },
+      {
+        "field": "IVAN_TESN",
+        "keyType": "PK"
+      }
+    ],
+    "?LEMC": [
+      {
+        "field": "?HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "?SAMP_TOP",
+        "keyType": "FK"
+      },
+      {
+        "field": "?SAMP_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "?SAMP_TYPE",
+        "keyType": "FK"
+      },
+      {
+        "field": "?SPEC_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "?SPEC_DPTH",
+        "keyType": "FK"
+      }
+    ],
+    "?MONP": [
+      {
+        "field": "?HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "?MONP_DIS",
+        "keyType": "PK"
+      },
+      {
+        "field": "?MONP_ID",
+        "keyType": "PK"
+      }
+    ],
+    "?MONR": [
+      {
+        "field": "?HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "?MONR_DIS",
+        "keyType": "PK"
+      },
+      {
+        "field": "?MONR_ID",
+        "keyType": "PK"
+      },
+      {
+        "field": "?MONR_DATE",
+        "keyType": "PK"
+      },
+      {
+        "field": "?MONR_TIME",
+        "keyType": "PK"
+      }
+    ],
+    "POBS": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "PREF_TDEP",
+        "keyType": "FK"
+      },
+      {
+        "field": "POBS_DATE",
+        "keyType": "PK"
+      },
+      {
+        "field": "POBS_TIME",
+        "keyType": "PK"
+      }
+    ],
+    "PREF": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "PREF_TDEP",
+        "keyType": "PK"
+      }
+    ],
+    "PRTG": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "PRTD_TREF",
+        "keyType": "FK"
+      },
+      {
+        "field": "PRTD_DPTH",
+        "keyType": "FK"
+      }
+    ],
+    "PRTL": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "PRTD_TREF",
+        "keyType": "FK"
+      },
+      {
+        "field": "PRTD_DPTH",
+        "keyType": "FK"
+      },
+      {
+        "field": "PRTL_LNO",
+        "keyType": "PK"
+      }
+    ],
+    "PTIM": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "PTIM_DATE",
+        "keyType": "PK"
+      },
+      {
+        "field": "PTIM_TIME",
+        "keyType": "PK"
+      }
+    ],
+    "PTST": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TOP",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TYPE",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_DPTH",
+        "keyType": "FK"
+      },
+      {
+        "field": "PTST_TESN",
+        "keyType": "PK"
+      }
+    ],
+    "PUMP": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "PUMP_DATE",
+        "keyType": "PK"
+      },
+      {
+        "field": "PUMP_TIME",
+        "keyType": "PK"
+      }
+    ],
+    "ROCK": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TOP",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TYPE",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_DPTH",
+        "keyType": "FK"
+      }
+    ],
+    "SAMP": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TOP",
+        "keyType": "PK"
+      },
+      {
+        "field": "SAMP_REF",
+        "keyType": "PK"
+      },
+      {
+        "field": "SAMP_TYPE",
+        "keyType": "PK"
+      }
+    ],
+    "SHBG": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TOP",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TYPE",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_DPTH",
+        "keyType": "FK"
+      }
+    ],
+    "SHBT": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TOP",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TYPE",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_DPTH",
+        "keyType": "FK"
+      },
+      {
+        "field": "SHBT_TESN",
+        "keyType": "PK"
+      }
+    ],
+    "STCN": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "STCN_DPTH",
+        "keyType": "PK"
+      }
+    ],
+    "?TREM": [
+      {
+        "field": "?HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "?TREM_DATE",
+        "keyType": "PK"
+      },
+      {
+        "field": "?TREM_TIME",
+        "keyType": "PK"
+      }
+    ],
+    "TRIG": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TOP",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TYPE",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_DPTH",
+        "keyType": "FK"
+      }
+    ],
+    "TRIX": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TOP",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SAMP_TYPE",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_REF",
+        "keyType": "FK"
+      },
+      {
+        "field": "SPEC_DPTH",
+        "keyType": "FK"
+      },
+      {
+        "field": "TRIX_TESN",
+        "keyType": "PK"
+      }
+    ],
+    "UNIT": [
+      {
+        "field": "UNIT_UNIT",
+        "keyType": "PK"
+      }
+    ],
+    "WETH": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "WETH_TOP",
+        "keyType": "PK"
+      },
+      {
+        "field": "WETH_REF",
+        "keyType": "PK"
+      }
+    ],
+    "WSTK": [
+      {
+        "field": "HOLE_ID",
+        "keyType": "FK"
+      },
+      {
+        "field": "WSTK_DEP",
+        "keyType": "PK"
+      },
+      {
+        "field": "WSTK_NMIN",
+        "keyType": "PK"
+      }
+    ]
+  }
+}

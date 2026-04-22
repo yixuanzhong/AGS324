@@ -41,4 +41,4 @@ where = ["src"]
 "" = "src"
 
 [tool.setuptools.package-data]
-"AGS324" = ["ags4_standard_headers.json"]
+"AGS324" = ["ags4_standard_headers.json", "ref/*.json", "ref/*.csv"]
