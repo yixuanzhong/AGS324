@@ -55,6 +55,7 @@ class TemporalUnitShape:
 @dataclass
 class SchemaReferences:
     ags3_groups: List[str]
+    ags3_group_meta: Dict[str, Dict[str, object]]
     ags3_headings: Dict[str, Dict[str, Dict[str, str]]]
     ags3_keys: Dict[str, List[str]]
     ags4_version: str
@@ -88,6 +89,13 @@ def _normalize_ags3_headings_by_group(raw: Dict[str, Dict[str, Dict[str, str]]])
         for heading, meta in headings.items():
             heading_code = _normalize_code(heading)
             normalized[group_code][heading_code] = dict(meta)
+    return normalized
+
+
+def _normalize_ags3_groups(raw: Dict[str, Dict[str, object]]) -> Dict[str, Dict[str, object]]:
+    normalized: Dict[str, Dict[str, object]] = {}
+    for group, meta in raw.items():
+        normalized[_normalize_code(group)] = dict(meta)
     return normalized
 
 
@@ -134,6 +142,7 @@ def _load_schema_references(version: Optional[str] = None) -> SchemaReferences:
         ags4_raw = json.load(handle)
 
     ags3_groups = [_normalize_code(group) for group in ags3_raw["groups"].keys()]
+    ags3_group_meta = _normalize_ags3_groups(ags3_raw["groups"])
     ags4_groups = [_normalize_code(group) for group in ags4_raw["groups"].keys()]
     ags3_headings = _normalize_ags3_headings_by_group(ags3_raw["headingsByGroup"])
     ags3_keys = _normalize_ags3_keys(ags3_raw.get("keysByGroup", {}))
@@ -156,6 +165,7 @@ def _load_schema_references(version: Optional[str] = None) -> SchemaReferences:
 
     return SchemaReferences(
         ags3_groups=ags3_groups,
+        ags3_group_meta=ags3_group_meta,
         ags3_headings=ags3_headings,
         ags3_keys=ags3_keys,
         ags4_version=ags4_version,
@@ -392,6 +402,14 @@ def _ags3_heading_token(references: SchemaReferences, group: str, heading: str) 
     return f"*?{display}" if is_optional else f"*{display}"
 
 
+def _ags3_group_token(references: SchemaReferences, group: str) -> str:
+    meta = references.ags3_group_meta.get(group, {})
+    code = str(meta.get("code", group))
+    is_optional = bool(meta.get("optional")) or code.startswith("?")
+    display = _normalize_code(code)
+    return f"**?{display}" if is_optional else f"**{display}"
+
+
 def _serialize_ags4_tables(tables: List[AGSTable], include_types: bool) -> str:
     buffer = StringIO()
     writer = csv.writer(buffer, quoting=csv.QUOTE_ALL, lineterminator="\r\n")
@@ -518,7 +536,7 @@ def _ags3_units_applicable(group: str) -> bool:
 def _serialize_ags3_tables(tables: List[AGSTable], references: SchemaReferences) -> str:
     lines: List[str] = []
     for table in tables:
-        lines.append(_serialize_csv_row([f"**{table.group}"]))
+        lines.append(_serialize_csv_row([_ags3_group_token(references, table.group)]))
         for heading_row, continued in _wrap_ags3_token_row(
             [_ags3_heading_token(references, table.group, heading) for heading in table.headings]
         ):

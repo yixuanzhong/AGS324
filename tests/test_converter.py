@@ -456,7 +456,7 @@ class ConverterTests(unittest.TestCase):
 
         self.assertIn('"**HOLE"', converted)
         self.assertIn('"**CLSS"', converted)
-        self.assertIn('"**HORN"', converted)
+        self.assertIn('"**?HORN"', converted)
         self.assertNotIn('"GROUP","HOLE"', converted)
         self.assertIn('"BH1","BH","100.0","200.0","10.0","12.5","08/04/2026","300.0","400.0","09/04/2026"', converted)
         self.assertIn('"*?HORN_ORNT","*?HORN_INCL","*?HORN_REM"', converted)
@@ -572,6 +572,7 @@ class ConverterTests(unittest.TestCase):
         self.assertIn('"3.1"', converted)
         self.assertIn('"**PROJ"', converted)
         self.assertIn('"**ABBR"', converted)
+        self.assertIn('"**?BKFL"', converted)
         self.assertIn('"**DICT"', converted)
         self.assertIn('"**FILE"', converted)
         self.assertIn('"<CONT>"', converted)
