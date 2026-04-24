@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "AGS324"
-version = "0.1.0"
+version = "0.2.0"
 authors = [
     {name = "Yixuan Zhong", email = "yixuan.zhong.public@gmail.com"},
 ]
-description = "A utility library for upgrading AGS 3.1 data to AGS 4"
+description = "A utility library for data-preserving conversion between AGS 3.1 and AGS 4.x schemas"
 readme = "README.md"
 license = {text = "LGPL-3.0"}
 requires-python = ">=3.8"
