@@ -1225,11 +1225,20 @@ def upgrade(input_ags_path: str, output_ags_path: Optional[str] = None, version:
     _write_text(output_path, _serialize_ags4_tables(output_tables, include_types=True))
 
 
-def downgrade(input_ags_path: str, output_ags_path: Optional[str] = None) -> None:
+def _detect_ags4_version(parsed_tables: Dict[str, AGSTable]) -> Optional[str]:
+    tran = parsed_tables.get("TRAN")
+    if not tran or not tran.rows:
+        return None
+    declared = str(tran.rows[0].get("TRAN_AGS", "")).strip()
+    return declared if declared in SUPPORTED_AGS4_VERSIONS else None
+
+
+def downgrade(input_ags_path: str, output_ags_path: Optional[str] = None, version: Optional[str] = None) -> None:
     validated_output = _validate_paths(input_ags_path, output_ags_path)
     output_path = validated_output or _default_output_path(input_ags_path, "_AGS3.ags")
-    references = _load_schema_references()
     parsed_tables = _parse_ags_tables(_read_text(input_ags_path))
+    resolved_version = version or _detect_ags4_version(parsed_tables)
+    references = _load_schema_references(resolved_version)
     _backfill_table_units_from_references(parsed_tables, references)
     output_tables = _build_downgrade_tables(parsed_tables, references)
     _write_text(output_path, _serialize_ags3_tables(output_tables, references))

@@ -14,23 +14,28 @@ This package provides tools for:
 from AGS324 import ags4_c3dgm, upgrade, downgrade
 ```
 
+All three conversion functions accept an optional output path as their second argument. When omitted, the output file is written next to the input with a default suffix appended (`_AGS4.ags` for upgrades, `_AGS3.ags` for downgrades).
+
 ### Upgrade an AGS 3.1 file for Civil 3D Geotechnical Modeler
 ```python
-ags4_c3dgm("input.ags")
+ags4_c3dgm("input.ags")                        # writes input_AGS4.ags
+ags4_c3dgm("input.ags", "custom_output.ags")   # writes custom_output.ags
 ```
-Writes `input_AGS4.ags`.
 
 ### Upgrade an AGS 3.1 file to a specific AGS 4 version
 ```python
-upgrade("input.ags", version="4.1.1")
+upgrade("input.ags", version="4.1.1")                        # writes input_AGS4.ags
+upgrade("input.ags", "custom_output.ags", version="4.1.1")   # writes custom_output.ags
 ```
 If `version` is omitted, `upgrade()` targets the latest bundled AGS 4 version (`4.2`). Supported versions: `4.0.3`, `4.0.4`, `4.1`, `4.1.1`, `4.2`.
 
 ### Downgrade an AGS 4 file to AGS 3.1
 ```python
-downgrade("input.ags")
+downgrade("input.ags")                        # writes input_AGS3.ags
+downgrade("input.ags", "custom_output.ags")   # writes custom_output.ags
+downgrade("input.ags", version="4.1.1")       # force a specific source-version crosswalk
 ```
-Writes `input_AGS3.ags`.
+If `version` is omitted, `downgrade()` auto-detects the source AGS 4 version from the file's `TRAN_AGS` field, falling back to the latest bundled version (`4.2`) if the field is missing or unrecognized.
 
 ## Acknowledgements
 
