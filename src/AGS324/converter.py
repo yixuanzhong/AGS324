@@ -1038,7 +1038,33 @@ def _apply_downgrade_target_overrides(grouped_rows: Dict[str, List[RowRecord]]) 
         record.values["PROJ_AGS"] = "3.1"
 
 
-def _build_upgrade_tables(parsed_tables: Dict[str, AGSTable], references: SchemaReferences) -> List[AGSTable]:
+def _order_output_headings(
+    heading_meta: Dict[str, Dict[str, str]],
+    records: List[RowRecord],
+    key_headings: List[str],
+    passthrough: bool,
+) -> List[str]:
+    """Schema-defined headings in schema order, followed (when passthrough is on)
+    by verbatim/unmapped headings in first-seen order so their data survives."""
+    used: List[str] = list(key_headings)
+    seen = set(used)
+    for record in records:
+        for heading, value in record.values.items():
+            if (value or heading in record.conflicts) and heading not in seen:
+                seen.add(heading)
+                used.append(heading)
+    known = [heading for heading in heading_meta.keys() if heading in seen]
+    if not passthrough:
+        return known
+    extra = [heading for heading in used if heading not in heading_meta]
+    return known + extra
+
+
+def _build_upgrade_tables(
+    parsed_tables: Dict[str, AGSTable],
+    references: SchemaReferences,
+    passthrough_unmapped: bool = True,
+) -> List[AGSTable]:
     grouped_rows: Dict[str, List[RowRecord]] = {}
     unit_candidates: Dict[str, Dict[str, set[str]]] = {}
 
@@ -1051,7 +1077,11 @@ def _build_upgrade_tables(parsed_tables: Dict[str, AGSTable], references: Schema
                     continue
                 mappings = references.forward_crosswalk.get((source_group, source_heading), [])
                 if not mappings:
-                    continue
+                    if not passthrough_unmapped:
+                        continue
+                    # No explicit AGS3->AGS4 crosswalk entry: carry the heading
+                    # through verbatim (same group + heading) instead of dropping it.
+                    mappings = [(source_group, source_heading)]
                 source_meta = _ags3_heading_meta(references, source_group, source_heading)
                 for target_group, target_heading in mappings:
                     target_meta = _ags4_heading_meta(references, target_group, target_heading)
@@ -1086,26 +1116,30 @@ def _build_upgrade_tables(parsed_tables: Dict[str, AGSTable], references: Schema
     _apply_upgrade_target_overrides(grouped_rows, references.ags4_version)
 
     output_tables: List[AGSTable] = []
-    for group in references.ags4_groups:
+    # AGS4-defined groups first (schema order), then any verbatim groups.
+    extra_groups = [g for g in grouped_rows if g not in references.ags4_groups] if passthrough_unmapped else []
+    for group in [*references.ags4_groups, *extra_groups]:
         records = grouped_rows.get(group, [])
         if not records:
             continue
         heading_meta = references.ags4_headings.get(group, {})
         key_headings = references.ags4_keys.get(group, [])
-        used_headings = set(key_headings)
-        for record in records:
-            used_headings.update(heading for heading, value in record.values.items() if value or heading in record.conflicts)
-        ordered_headings = [heading for heading in heading_meta.keys() if heading in used_headings]
+        ordered_headings = _order_output_headings(heading_meta, records, key_headings, passthrough_unmapped)
         if not ordered_headings:
             continue
-        types = [heading_meta[heading].get("dataType", "X") for heading in ordered_headings]
+
+        def _meta_for(heading: str) -> Dict[str, str]:
+            # Verbatim headings have no AGS4 schema entry: default to free-text "X".
+            return heading_meta.get(heading, {"dataType": "X", "unit": ""})
+
+        types = [_meta_for(heading).get("dataType", "X") for heading in ordered_headings]
         rows = []
         for record in records:
             rows.append(
                 {
                     heading: _normalize_numeric_precision_value(
                         record.values.get(heading, ""),
-                        heading_meta[heading].get("dataType", "X"),
+                        _meta_for(heading).get("dataType", "X"),
                     )
                     for heading in ordered_headings
                 }
@@ -1114,7 +1148,7 @@ def _build_upgrade_tables(parsed_tables: Dict[str, AGSTable], references: Schema
             _resolve_output_unit(
                 group=group,
                 heading=heading,
-                meta=heading_meta[heading],
+                meta=_meta_for(heading),
                 values=[row.get(heading, "") for row in rows],
                 unit_candidates=unit_candidates,
             )
@@ -1125,7 +1159,11 @@ def _build_upgrade_tables(parsed_tables: Dict[str, AGSTable], references: Schema
     return output_tables
 
 
-def _build_downgrade_tables(parsed_tables: Dict[str, AGSTable], references: SchemaReferences) -> List[AGSTable]:
+def _build_downgrade_tables(
+    parsed_tables: Dict[str, AGSTable],
+    references: SchemaReferences,
+    passthrough_unmapped: bool = True,
+) -> List[AGSTable]:
     grouped_rows: Dict[str, List[RowRecord]] = {}
     deferred_fragments: List[Tuple[str, RowRecord, str]] = []
     unit_candidates: Dict[str, Dict[str, set[str]]] = {}
@@ -1139,7 +1177,11 @@ def _build_downgrade_tables(parsed_tables: Dict[str, AGSTable], references: Sche
                     continue
                 mappings = references.reverse_crosswalk.get((target_group, target_heading), [])
                 if not mappings:
-                    continue
+                    if not passthrough_unmapped:
+                        continue
+                    # No explicit AGS4->AGS3 crosswalk entry: carry the heading
+                    # through verbatim (same group + heading) instead of dropping it.
+                    mappings = [(target_group, target_heading)]
                 source_meta = _ags4_heading_meta(references, target_group, target_heading)
                 for source_group, source_heading in mappings:
                     target_meta = _ags3_heading_meta(references, source_group, source_heading)
@@ -1185,18 +1227,22 @@ def _build_downgrade_tables(parsed_tables: Dict[str, AGSTable], references: Sche
     _apply_downgrade_target_overrides(grouped_rows)
 
     output_tables: List[AGSTable] = []
-    for group in references.ags3_groups:
+    # AGS3-defined groups first (schema order), then any verbatim groups.
+    extra_groups = [g for g in grouped_rows if g not in references.ags3_groups] if passthrough_unmapped else []
+    for group in [*references.ags3_groups, *extra_groups]:
         records = grouped_rows.get(group, [])
         if not records:
             continue
         heading_meta = references.ags3_headings.get(group, {})
         key_headings = references.ags3_keys.get(group, [])
-        used_headings = set(key_headings)
-        for record in records:
-            used_headings.update(heading for heading, value in record.values.items() if value or heading in record.conflicts)
-        ordered_headings = [heading for heading in heading_meta.keys() if heading in used_headings]
+        ordered_headings = _order_output_headings(heading_meta, records, key_headings, passthrough_unmapped)
         if not ordered_headings:
             continue
+
+        def _meta_for(heading: str) -> Dict[str, str]:
+            # Verbatim headings have no AGS3 schema entry: default to blank unit.
+            return heading_meta.get(heading, {"unit": ""})
+
         rows = []
         for record in records:
             rows.append({heading: record.values.get(heading, "") for heading in ordered_headings})
@@ -1204,7 +1250,7 @@ def _build_downgrade_tables(parsed_tables: Dict[str, AGSTable], references: Sche
             _resolve_output_unit(
                 group=group,
                 heading=heading,
-                meta=heading_meta[heading],
+                meta=_meta_for(heading),
                 values=[row.get(heading, "") for row in rows],
                 unit_candidates=unit_candidates,
             )
@@ -1215,13 +1261,18 @@ def _build_downgrade_tables(parsed_tables: Dict[str, AGSTable], references: Sche
     return output_tables
 
 
-def upgrade(input_ags_path: str, output_ags_path: Optional[str] = None, version: Optional[str] = None) -> None:
+def upgrade(
+    input_ags_path: str,
+    output_ags_path: Optional[str] = None,
+    version: Optional[str] = None,
+    passthrough_unmapped: bool = True,
+) -> None:
     validated_output = _validate_paths(input_ags_path, output_ags_path)
     output_path = validated_output or _default_output_path(input_ags_path, "_AGS4.ags")
     references = _load_schema_references(version)
     parsed_tables = _parse_ags_tables(_read_text(input_ags_path))
     _backfill_table_units_from_references(parsed_tables, references)
-    output_tables = _build_upgrade_tables(parsed_tables, references)
+    output_tables = _build_upgrade_tables(parsed_tables, references, passthrough_unmapped)
     _write_text(output_path, _serialize_ags4_tables(output_tables, include_types=True))
 
 
@@ -1233,12 +1284,17 @@ def _detect_ags4_version(parsed_tables: Dict[str, AGSTable]) -> Optional[str]:
     return declared if declared in SUPPORTED_AGS4_VERSIONS else None
 
 
-def downgrade(input_ags_path: str, output_ags_path: Optional[str] = None, version: Optional[str] = None) -> None:
+def downgrade(
+    input_ags_path: str,
+    output_ags_path: Optional[str] = None,
+    version: Optional[str] = None,
+    passthrough_unmapped: bool = True,
+) -> None:
     validated_output = _validate_paths(input_ags_path, output_ags_path)
     output_path = validated_output or _default_output_path(input_ags_path, "_AGS3.ags")
     parsed_tables = _parse_ags_tables(_read_text(input_ags_path))
     resolved_version = version or _detect_ags4_version(parsed_tables)
     references = _load_schema_references(resolved_version)
     _backfill_table_units_from_references(parsed_tables, references)
-    output_tables = _build_downgrade_tables(parsed_tables, references)
+    output_tables = _build_downgrade_tables(parsed_tables, references, passthrough_unmapped)
     _write_text(output_path, _serialize_ags3_tables(output_tables, references))

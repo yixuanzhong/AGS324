@@ -15,7 +15,7 @@ Basic usage:
 """
 
 # Version information
-__version__ = "0.1.0"
+__version__ = "0.3.0"
 __author__ = "Yixuan Zhong"
 __email__ = "yixuan.zhong.public@gmail.com"
 

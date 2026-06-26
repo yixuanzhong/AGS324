@@ -463,7 +463,29 @@ class ConverterTests(unittest.TestCase):
         self.assertIn('"BH1","0.0","12.5","90","5","Orientation note"', converted)
         self.assertIn('"BH1","1.0","S1","UND","SP1","1.1","50","20","Prep A","55","Different remark","55","Different remark","Remark A"', converted)
 
-    def test_upgrade_drops_unmapped_fields(self) -> None:
+    def test_upgrade_passes_through_unmapped_fields_by_default(self) -> None:
+        source = self._write(
+            "passthrough_test.ags",
+            '\n'.join(
+                [
+                    '"**PROJ"',
+                    '"PROJ_ID","PROJ_CID","PROJ_NAME"',
+                    '"P2","UNMAPPED","Project Two"',
+                    "",
+                ]
+            ),
+        )
+
+        output = self.workdir / "passthrough_test_AGS4.ags"
+        upgrade(str(source), str(output))
+        converted = self._read(output)
+
+        self.assertIn('"GROUP","PROJ"', converted)
+        # Unmapped heading is carried through verbatim, appended after mapped headings.
+        self.assertIn("PROJ_CID", converted)
+        self.assertIn('"DATA","P2","Project Two","UNMAPPED"', converted)
+
+    def test_upgrade_drops_unmapped_fields_when_passthrough_disabled(self) -> None:
         source = self._write(
             "drop_test.ags",
             '\n'.join(
@@ -477,7 +499,7 @@ class ConverterTests(unittest.TestCase):
         )
 
         output = self.workdir / "drop_test_AGS4.ags"
-        upgrade(str(source), str(output))
+        upgrade(str(source), str(output), passthrough_unmapped=False)
         converted = self._read(output)
 
         self.assertIn('"GROUP","PROJ"', converted)
